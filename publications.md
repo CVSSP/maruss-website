@@ -5,9 +5,8 @@ permalink: /people/
 menu: true
 ---
 
+# Investigators
 
-Investigators
--------------
 - Mark Plumbley (P.I.)
 
 - Russell Mason
@@ -19,11 +18,16 @@ Investigators
 - Phillip Jackson
 
 
-Researchers
------------
+# Current Researchers
+
 - Emad Grais
+
+- Hagen Wierstorf
+
+- Dominic Ward
+
+# Past researchers
 
 - Gerard Roma
 
 - Andrew Simpson
-
