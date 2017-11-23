@@ -1,33 +1,13 @@
 ---
 layout: page
-title: People
-permalink: /people/
-menu: true
+permalink: /publications/
+title: Publications
 ---
 
-# Investigators
+{% assign publications = site.publications | sort  %}
 
-- Mark Plumbley (P.I.)
+{% for pub in publications %}
 
-- Russell Mason
+  <a href="{{ pub.url }}" >{{ pub.title }}</a>
 
-- Christopher Hummersone
-
-- Wenwu Wang
-
-- Phillip Jackson
-
-
-# Current Researchers
-
-- Emad Grais
-
-- Hagen Wierstorf
-
-- Dominic Ward
-
-# Past researchers
-
-- Gerard Roma
-
-- Andrew Simpson
+{% endfor %}

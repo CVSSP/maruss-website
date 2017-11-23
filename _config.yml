@@ -29,4 +29,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 exclude: [vendor]
-include: [publications]
+collections:
+    publications:
+        output: true

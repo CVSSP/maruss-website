@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Remixing musical audio on the web using source separation"
+year: 2010
 ---
 
 Abstract
