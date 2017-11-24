@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+h1 {
+    font-color: red !important;
+}
+
+ol li {
+    padding: 10px 5px !important;
+}
