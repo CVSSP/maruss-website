@@ -25,10 +25,17 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll/scholar
 exclude:
   - Gemfile
   - Gemfile.lock
 exclude: [vendor]
-collections:
-    publications:
-        output: true
+scholar:
+    bibliography_template: publications
+    details_layout: publication.html
+    details_link:   Details
+    details_dir: publications
+    bibliography: bibliography.bib
+    sort_by: year, month
+    order: descending
+    group_order: descending

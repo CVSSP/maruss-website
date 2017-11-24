@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+menu: true
 ---
 
 MARuSS is an EPSRC-funded research project (EP/L027119/1) that aims at
@@ -24,18 +25,6 @@ quality musical audio source separation (see <a href="about">about</a>).
 </ul>
 {% endif %}
 
-{% if site.publications.size > 0 %}
 # Latest publications
-<ul class="post-list">
-{% assign posts = site.publications | sort:"date"  %}
 
-{% for post in posts %}
-<li>
-<span class="post-meta">{{ post.date | date: "%Y" }}</span>
-<h2>
-<a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ post.title }}</a>
-</h2>
-</li>
-{% endfor %}
-</ul>
-{% endif %}
+{% bibliography --max 3 %}

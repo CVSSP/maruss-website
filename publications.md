@@ -2,12 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
+menu: true
 ---
 
-{% assign publications = site.publications | sort  %}
-
-{% for pub in publications %}
-
-  <a href="{{ pub.url }}" >{{ pub.title }}</a>
-
-{% endfor %}
+{% bibliography -g year %}

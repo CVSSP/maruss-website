@@ -1,0 +1,318 @@
+@Inbook{Simpson_2015,
+author="Simpson, Andrew J. R.
+and Roma, Gerard
+and Plumbley, Mark D.",
+editor="Vincent, Emmanuel
+and Yeredor, Arie
+and Koldovsk{\'y}, Zbyn{\v{e}}k
+and Tichavsk{\'y}, Petr",
+title="Deep Karaoke: Extracting Vocals from Musical Mixtures Using a Convolutional Deep Neural Network",
+bookTitle="Latent Variable Analysis and Signal Separation: 12th International Conference, LVA/ICA 2015, Liberec, Czech Republic, August 25-28, 2015, Proceedings",
+year="2015",
+publisher="Springer International Publishing",
+address="Cham",
+pages="429--436",
+abstract="Identification and extraction of singing voice from within musical mixtures is a key challenge in source separation and machine audition. Recently, deep neural networks (DNN) have been used to estimate `ideal' binary masks for carefully controlled cocktail party speech separation problems. However, it is not yet known whether these methods are capable of generalizing to the discrimination of voice and non-voice in the context of musical mixtures. Here, we trained a convolutional DNN (of around a billion parameters) to provide probabilistic estimates of the ideal binary mask for separation of vocal sounds from real-world musical mixtures. We contrast our DNN results with more traditional linear methods. Our approach may be useful for automatic removal of vocal sounds from musical mixtures for `karaoke' type applications.",
+isbn="978-3-319-22482-4",
+doi="10.1007/978-3-319-22482-4_50",
+url="https://doi.org/10.1007/978-3-319-22482-4_50"
+}
+
+@inproceedings{Roma_2016,
+author = {Roma, G., Simpson, A. J. R., Grais, E. M and Plumbley, M.},
+year = {2016},
+title = {Remixing musical audio on the web using source separation},
+booktitle = {Proceedings of the 2nd Web Audio Conference (WAC)},
+address = {Atlanta, Georgia},
+abstract = {
+    Research in audio source separation has progressed a long way, producing
+        systems that are able to approximate the component signals of sound
+        mixtures. In recent years, many efforts have focused on learning
+        time-frequency masks that can be used to filter a monophonic signal in
+        the frequency domain. Using current web audio technologies,
+    time-frequency masking can be implemented in a web browser in real time.
+        This allows applying source separation techniques to arbitrary audio
+        streams, such as internet radios, depending on cross-domain security
+        configurations. While producing good quality separated audio from
+        monophonic music mixtures is still challenging, current methods can be
+        applied to remixing scenarios, where part of the signal is emphasized or
+        deemphasized. This paper describes a system for remixing musical audio
+        on the web by applying time-frequency masks estimated using deep neural
+        networks. Our example prototype, implemented in client-side Javascript,
+    provides reasonable quality results for small modifications.  }
+}
+
+@conference{Grais_2016,
+    title = {Single-Channel Audio Source Separation Using Deep Neural Network Ensembles},
+    author = {Grais, E. M. and Roma, G. and Simpson, A. J. R. and Plumbley, M. D.},
+    booktitle = {Audio Engineering Society Convention 140},
+    month = {May},
+    year = {2016},
+    address = {Paris, France},
+    url = {http://www.aes.org/e-lib/browse.cfm?elib=18193},
+    abstract = {Deep neural networks (DNNs) are often used to tackle the single
+        channel source separation (SCSS) problem by predicting time-frequency
+            masks. The predicted masks are then used to separate the sources
+            from the mixed signal. Different types of masks produce separated
+            sources with different levels of distortion and interference. Some
+            types of masks produce separated sources with low distortion, while
+            other masks produce low interference between the separated sources.
+            In this paper a combination of different DNNs’ predictions (masks)
+            is used for SCSS to achieve better quality of the separated sources
+            than using each DNN individually. We train four different DNNs by
+            minimizing four different cost functions to predict four different
+            masks. The first and second DNNs are trained to approximate
+            reference binary and soft masks. The third DNN is trained to predict
+            a mask from the reference sources directly. The last DNN is trained
+            similarly to the third DNN but with an additional discriminative
+            constraint to maximize the differences between the estimated
+            sources. Our experimental results show that combining the
+            predictions of different DNNs achieves separated sources with better
+            quality than using each DNN individually.}
+}
+
+
+@inproceedings{Grais_2016b,
+author={Emad M. Grais and Gerard Roma and Andrew J.R. Simpson and Mark D. Plumbley},
+title={Combining Mask Estimates for Single Channel Audio Source Separation Using Deep Neural Networks},
+year=2016,
+booktitle={Interspeech 2016},
+doi={10.21437/Interspeech.2016-216},
+url={http://epubs.surrey.ac.uk/811087/},
+pages={3339--3343},
+address = {San Francisco, California}
+}
+
+@inproceedings{Roma_2016b,
+author = {Roma, Gerard and Grais, Emad and Simpson, A. J. R and Sobieraj, I. and Plumbley, M. D},
+year = {2016},
+month = {08},
+title = {Untwist: A new toolbox for audio source separation},
+booktitle = {Proceedings of the 17th International Society for Music Information
+    Retrieval Conference},
+url = {http://epubs.surrey.ac.uk/840750/}
+}
+
+@inproceedings{Roma_2016c,
+    booktitle = {Proceedings of the 2nd Audio Engineering Society Workshop on Intelligent Music Production},
+    title = {Music Remixing and Upmixing using Source Separation},
+    author = {G. Roma and E. M. Grais and A. J. R. Simpson and M. D. Plumbley},
+    year = {2016},
+    address = {London, UK},
+    url = {http://epubs.surrey.ac.uk/812682/}
+}
+
+@inproceedings{Roma_2016c,
+author = {Roma, Gerard and Grais, Emad and Simpson, A. J. R and Plumbley, M. D},
+year = {2016},
+month = {08},
+title = {singing voice separation using deep neural networks and f0 estimation},
+booktitle = {MIREX 2016},
+url = {http://www.music-ir.org/mirex/abstracts/2016/RSGP1.pdf},
+abstract = {Deep Neural Networks (DNN) have become a popular approach
+for speech enhancement, and singing voice separation.
+DNNs are typically trained to estimate a timefrequency
+mask using ground truth examples. In this submission,
+we combine DNN estimation as a first step with
+traditional refinement via F0 estimation, using the YINFFT
+algorithm.}
+}
+
+@inproceedings{DBLP:conf/eusipco/Simpson_2016,
+    author = {Andrew J. R. Simpson and
+            Gerard Roma and
+            Emad M. Grais and
+            Russell D. Mason and
+            Chris Hummersone and
+            Antoine Liutkus and
+            Mark D. Plumbley},
+    title = {Evaluation of audio source separation models using
+        hypothesis-driven non-parametric statistical methods},
+    booktitle = {24th European Signal Processing Conference, {EUSIPCO} 2016, Budapest, Hungary, August 29 - September 2, 2016},
+    pages     = {1763--1767},
+    year      = {2016},
+    url       = {http://epubs.surrey.ac.uk/811172/},
+    doi       = {10.1109/EUSIPCO.2016.7760551},
+    abstract = {Audio source separation models are typically evaluated using
+        objective separation quality measures, but rigorous statistical methods
+            have yet to be applied to the problem of model comparison. As a
+            result, it can be difficult to establish whether or not reliable
+            progress is being made during the development of new models. In this
+            paper, we provide a hypothesis-driven statistical analysis of the
+            results of the recent source separation SiSEC challenge involving
+            twelve competing models tested on separation of voice and
+            accompaniment from fifty pieces of “professionally produced”
+            contemporary music. Using nonparametric statistics, we establish
+            reliable evidence for meaningful conclusions about the performance
+            of the various models.
+    }
+}
+
+@Inbook{Grais_2017,
+author="Grais, Emad M.
+and Roma, Gerard
+and Simpson, Andrew J. R.
+and Plumbley, Mark D.",
+editor="Tichavsk{\'y}, Petr
+and Babaie-Zadeh, Massoud
+and Michel, Olivier J.J.
+and Thirion-Moreau, Nad{\`e}ge",
+title="Discriminative Enhancement for Single Channel Audio Source Separation Using Deep Neural Networks",
+bookTitle="Latent Variable Analysis and Signal Separation: 13th International Conference, LVA/ICA 2017, Grenoble, France, February 21-23, 2017, Proceedings",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="236--246",
+abstract="The sources separated by most single channel audio source separation techniques are usually distorted and each separated source contains residual signals from the other sources. To tackle this problem, we propose to enhance the separated sources to decrease the distortion and interference between the separated sources using deep neural networks (DNNs). Two different DNNs are used in this work. The first DNN is used to separate the sources from the mixed signal. The second DNN is used to enhance the separated signals. To consider the interactions between the separated sources, we propose to use a single DNN to enhance all the separated sources together. To reduce the residual signals of one source from the other separated sources (interference), we train the DNN for enhancement discriminatively to maximize the dissimilarity between the predicted sources. The experimental results show that using discriminative enhancement decreases the distortion and interference between the separated sources.",
+isbn="978-3-319-53547-0",
+doi="10.1007/978-3-319-53547-0_23",
+url="http://epubs.surrey.ac.uk/813112/"
+}
+
+
+@Inbook{Simpson_2017,
+author="Simpson, Andrew J. R.
+and Roma, Gerard
+and Grais, Emad M.
+and Mason, Russell D.
+and Hummersone, Christopher
+and Plumbley, Mark D.",
+editor="Tichavsk{\'y}, Petr
+and Babaie-Zadeh, Massoud
+and Michel, Olivier J.J.
+and Thirion-Moreau, Nad{\`e}ge",
+title="Psychophysical Evaluation of Audio Source Separation Methods",
+bookTitle="Latent Variable Analysis and Signal Separation: 13th International Conference, LVA/ICA 2017, Grenoble, France, February 21-23, 2017, Proceedings",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="211--221",
+abstract="Source separation evaluation is typically a top-down process, starting with perceptual measures which capture fitness-for-purpose and followed by attempts to find physical (objective) measures that are predictive of the perceptual measures. In this paper, we take a contrasting bottom-up approach. We begin with the physical measures provided by the Blind Source Separation Evaluation Toolkit (BSS Eval) and we then look for corresponding perceptual correlates. This approach is known as psychophysics and has the distinct advantage of leading to interpretable, psychophysical models. We obtained perceptual similarity judgments from listeners in two experiments featuring vocal sources within musical mixtures. In the first experiment, listeners compared the overall quality of vocal signals estimated from musical mixtures using a range of competing source separation methods. In a loudness experiment, listeners compared the loudness balance of the competing musical accompaniment and vocal. Our preliminary results provide provisional validation of the psychophysical approach.",
+isbn="978-3-319-53547-0",
+doi="10.1007/978-3-319-53547-0_21",
+url="http://epubs.surrey.ac.uk/813113/"
+}
+
+@inproceedings{Grais_2017,
+author = {Grais, Emad M and Plumbley, Mark},
+year = {2017},
+title = {Single Channel Audio Source Separation using Convolutional Denoising Autoencoders},
+booktitle = {Proceedings of the 5th IEEE Global Conference on Signal and
+    Information Processing (GlobalSIP2017)},
+year = {2017},
+month = {November},
+address = {Montreal, Canada},
+url = {http://epubs.surrey.ac.uk/841860/},
+abstract = {
+Most single channel audio source separation (SCASS) approaches produce separated
+    sources accompanied by interference from other sources and other
+    distortions. To tackle this problem, we propose to separate the sources in
+    two stages. In the first stage, the sources are separated from the mixed
+    signal. In the second stage, the interference between the separated sources
+    and the distortions are reduced using deep neural networks (DNNs). We
+    propose two methods that use DNNs to improve the quality of the separated
+    sources in the second stage. In the first method, each separated source is
+    improved individually using its own trained DNN, while in the second method
+    all the separated sources are improved together using a single DNN. To
+    further improve the quality of the separated sources, the DNNs in the second
+    stage are trained discriminatively to further decrease the interference and
+    the distortions of the separated sources. Our experimental results show that
+    using two stages of separation improves the quality of the separated signals
+    by decreasing the interference between the separated sources and distortions
+    compared to separating the sources using a single stage of separation.}
+}
+}
+
+@article{Grais_2017b, 
+author={E. M. Grais and G. Roma and A. J. R. Simpson and M. D. Plumbley}, 
+journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 
+title={Two-Stage Single-Channel Audio Source Separation Using Deep Neural Networks}, 
+year={2017}, 
+volume={25}, 
+number={9}, 
+pages={1773-1783}, 
+abstract={Most single channel audio source separation approaches produce separated sources accompanied by interference from other sources and other distortions. To tackle this problem, we propose to separate the sources in two stages. In the first stage, the sources are separated from the mixed signal. In the second stage, the interference between the separated sources and the distortions are reduced using deep neural networks (DNNs). We propose two methods that use DNNs to improve the quality of the separated sources in the second stage. In the first method, each separated source is improved individually using its own trained DNN, while in the second method all the separated sources are improved together using a single DNN. To further improve the quality of the separated sources, the DNNs in the second stage are trained discriminatively to further decrease the interference and the distortions of the separated sources. Our experimental results show that using two stages of separation improves the quality of the separated signals by decreasing the interference between the separated sources and distortions compared to separating the sources using a single stage of separation.}, 
+doi={10.1109/TASLP.2017.2716443}, 
+ISSN={2329-9290}, 
+month={Sept},
+url={http://epubs.surrey.ac.uk/841432/}
+}
+
+@inproceedings{Ward_2017,
+    title     = {Estimating the loudness balance of musical mixtures using audio source separation},
+    author    = {Ward, Dominic and Wierstorf, Hagen and Mason, Russel
+                 and Plumbley, Mark D.and Hummersone, Chris},
+    booktitle = {3rd Workshop on Intelligent Music Production},
+    address   = {Salford, UK},
+    month     = {September},
+    year      = {2017},
+    abstract = {
+        To assist with the development of intelligent mixing systems, it would
+            be useful to be able to extract the loudness balance of sources in
+            an existing musical mixture. The relative-to-mix loudness level of
+            four instrument groups was predicted using the sources extracted by
+            12 audio source separation algorithms. The predictions were compared
+            with the ground truth loudness data of the original unmixed stems
+            obtained from a recent dataset involving 100 mixed songs. It was
+            found that the best source separation system could predict the
+            relative loudness of each instrument group with an average
+            root-mean-square error of 1.2 LU, with superior performance obtained
+            on vocals.
+    },
+    url = {http://epubs.surrey.ac.uk/841966/}
+}
+
+@inproceedings{Wierstorf_2017,
+    title     = {Perceptual Evaluation of Source Separation for Remixing Music},
+    author    = {Wierstorf, Hagen and Ward, Dominic and Grais, Emad M.
+                 and Plumbley, Mark D. and Mason, Russell
+                 and Hummersone, Chirs},
+    booktitle = {143rd Convention of the Audio Engineering Society},
+    address   = {New York, NY},
+    pages     = {Paper 9880},
+    month     = {October},
+    year      = {2017},
+    url       = {http://epubs.surrey.ac.uk/844663/},
+    abstract  = {
+        Music remixing is difficult when the original multitrack recording is
+            not available. One solution is to estimate the elements of a mixture
+            using source separation. However, existing techniques suffer from
+            imperfect separation and perceptible artifacts on single separated
+            sources. To investigate their influence on a remix, five
+            state-of-the-art source separation algorithms were used to remix six
+            songs by increasing the level of the vocals. A listening test was
+            conducted to assess the remixes in terms of loudness balance and
+            sound quality. The results show that some source separation
+            algorithms are able to increase the level of the vocals by up to 6
+            dB at the cost of introducing a small but perceptible degradation in
+            sound quality.
+    }
+}
+
+
+@article{Grais_2017c,
+   author = {{Grais}, E.~M. and {Wierstorf}, H. and {Ward}, D. and {Plumbley}, M.~D.},
+    title = "{Multi-Resolution Fully Convolutional Neural Networks for Monaural Audio Source Separation}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1710.11473},
+     year = 2017,
+    month = oct,
+   url = {http://adsabs.harvard.edu/abs/2017arXiv171011473G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+   abstract = {
+In deep neural networks with convolutional layers, each layer typically has
+    fixed-size/single-resolution receptive field (RF). Convolutional layers with
+    a large RF capture global information from the input features, while layers
+    with small RF size capture local details with high resolution from the input
+    features. In this work, we introduce novel deep multi-resolution fully
+    convolutional neural networks (MR-FCNN), where each layer has different RF
+    sizes to extract multi-resolution features that capture the global and local
+    details information from its input features. The proposed MR-FCNN is applied
+    to separate a target audio source from a mixture of many audio sources.
+    Experimental results show that using MR-FCNN improves the performance
+    compared to feedforward deep neural networks (DNNs) and single resolution
+    deep fully convolutional neural networks (FCNNs) on the audio source
+    separation problem.
+   }
+}
