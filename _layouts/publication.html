@@ -3,21 +3,23 @@ layout: page
 ---
 
 <!-- https://github.com/hagenw/hagenw.github.io/blob/master/_layouts/post.html -->
-<div>
-    {% if page.author %}{{ page.author }} {% endif %}
+    <p>
+    {% if page.authors %}{{ page.authors }} {% endif %}
     {% if page.year %}({{ page.year }}) {% endif %}
-    {% if page.title %}{% if page.book %}<em>{% else %}"{% endif %}{{ page.title }}{% if page.book %}</em>, {% else %}," {% endif %}{% endif %}
-    {% if page.proceedings %}In <em>{{ page.proceedings }}</em>, {% endif %}
+    {% if page.title %}{% if page.book %}<em>{% else %}"{% endif %}{{ page.title
+        }}{% if page.book %}</em>, {% else %}". {% endif %}{% endif %}
+    {% if page.proceedings %}In <em>{{ page.proceedings }}</em>, {% if page.editor %}Ed. {{ page.editor }}, {% endif %}{% if page.editors %}Eds. {{ page.editors }}, {% endif %}{% endif %}
     {% if page.bookchapter %}In <em>{{ page.bookchapter }}</em>, {% if page.editor %}Ed. {{ page.editor }}, {% endif %}{% if page.editors %}Eds. {{ page.editors }}, {% endif %}{% endif %}
     {% if page.journal %}{{ page.journal }}{% if page.volume %} {{ page.volume}} {% if page.number %} ({{ page.number }}) {% endif %} {% endif %}, {% endif %}
     {% if page.pages %}p. {{ page.pages }} {% endif %}
     {% if page.papernumber %}Paper {{ page.papernumber }}{% endif %}
     {% if page.ebriefnumber %}eBrief {{ page.ebriefnumber }}{% endif %}
     {% if page.location %} {{ page.location }} {% endif %}
-    {% if page.paperlink %} <a href="{{ page.paperlink }}">[ paper ]</a> {% endif %}
-    {% if page.presentationlink %} <a href="{{ page.presentationlink }}">[ presentation ]</a> {% endif %}
-<br></br>
-</div>
+    <br></br>
+    {% if page.doi %} doi: <a href="{{ page.doi }}">{{ page.doi }}</a> <br></br>{% endif %}
+    {% if page.paperlink %} paper: <a href="{{ page.paperlink }}">{{ page.paperlink }}</a> <br></br>{% endif %}
+    {% if page.presentationlink %} presentation: <a href="{{ page.presentationlink }}">{{ page.presentationlink }}<br></br></a> {% endif %}
+    </p>
 
 {% if page.abstract %}
 <h1> Abstract </h1>
