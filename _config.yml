@@ -31,6 +31,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 exclude: [vendor]
+collections:
+    publication_resources:
+        output: true
 scholar:
     bibliography_template: publications
     details_layout: publication.html

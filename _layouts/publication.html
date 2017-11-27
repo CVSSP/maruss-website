@@ -2,12 +2,24 @@
 layout: page
 ---
 
+{% if page.entry.abstract %}
 <h2> Abstract </h2>
 {{ page.entry.abstract }}
+{% endif %}
 
+{% if page.entry.bibtex %}
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
 {{ page.entry.bibtex }}
 </code>
 </pre>
+{% endif %}
+
+<!-- Bit of a hack but does the job -->
+{% assign resources = site.publication_resources %}
+    {% for item in resources %}
+        {% if item.title == page.entry.key %}
+            {{ item | markdownify }}
+        {% endif %}
+{% endfor %}
