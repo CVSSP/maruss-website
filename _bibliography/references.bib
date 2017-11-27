@@ -15,16 +15,17 @@ pages="429--436",
 abstract="Identification and extraction of singing voice from within musical mixtures is a key challenge in source separation and machine audition. Recently, deep neural networks (DNN) have been used to estimate `ideal' binary masks for carefully controlled cocktail party speech separation problems. However, it is not yet known whether these methods are capable of generalizing to the discrimination of voice and non-voice in the context of musical mixtures. Here, we trained a convolutional DNN (of around a billion parameters) to provide probabilistic estimates of the ideal binary mask for separation of vocal sounds from real-world musical mixtures. We contrast our DNN results with more traditional linear methods. Our approach may be useful for automatic removal of vocal sounds from musical mixtures for `karaoke' type applications.",
 isbn="978-3-319-22482-4",
 doi="10.1007/978-3-319-22482-4_50",
-url="https://doi.org/10.1007/978-3-319-22482-4_50"
+url="https://doi.org/10.1007/978-3-319-22482-4_50",
+keywords = {"maruss"}
 }
 
 @inproceedings{Roma_2016,
-author = {Roma, G., Simpson, A. J. R., Grais, E. M and Plumbley, M.},
-year = {2016},
-title = {Remixing musical audio on the web using source separation},
-booktitle = {Proceedings of the 2nd Web Audio Conference (WAC)},
-address = {Atlanta, Georgia},
-abstract = {
+    author = {Roma, G. and Simpson, A. J. R. and Grais, E. M and Plumbley, M.},
+    year = {2016},
+    title = {Remixing musical audio on the web using source separation},
+    booktitle = {Proceedings of the 2nd Web Audio Conference (WAC)},
+    address = {Atlanta, Georgia},
+    abstract = {
     Research in audio source separation has progressed a long way, producing
         systems that are able to approximate the component signals of sound
         mixtures. In recent years, many efforts have focused on learning
@@ -39,7 +40,8 @@ abstract = {
         deemphasized. This paper describes a system for remixing musical audio
         on the web by applying time-frequency masks estimated using deep neural
         networks. Our example prototype, implemented in client-side Javascript,
-    provides reasonable quality results for small modifications.  }
+    provides reasonable quality results for small modifications.},
+    keywords = {"maruss"}
 }
 
 @conference{Grais_2016,
@@ -68,7 +70,8 @@ abstract = {
             constraint to maximize the differences between the estimated
             sources. Our experimental results show that combining the
             predictions of different DNNs achieves separated sources with better
-            quality than using each DNN individually.}
+            quality than using each DNN individually.},
+    keywords = {"maruss"}
 }
 
 
@@ -80,7 +83,8 @@ booktitle={Interspeech 2016},
 doi={10.21437/Interspeech.2016-216},
 url={http://epubs.surrey.ac.uk/811087/},
 pages={3339--3343},
-address = {San Francisco, California}
+address = {San Francisco, California},
+keywords = {"maruss"}
 }
 
 @inproceedings{Roma_2016b,
@@ -90,7 +94,8 @@ month = {08},
 title = {Untwist: A new toolbox for audio source separation},
 booktitle = {Proceedings of the 17th International Society for Music Information
     Retrieval Conference},
-url = {http://epubs.surrey.ac.uk/840750/}
+url = {http://epubs.surrey.ac.uk/840750/},
+keywords = {"maruss"}
 }
 
 @inproceedings{Roma_2016c,
@@ -99,7 +104,8 @@ url = {http://epubs.surrey.ac.uk/840750/}
     author = {G. Roma and E. M. Grais and A. J. R. Simpson and M. D. Plumbley},
     year = {2016},
     address = {London, UK},
-    url = {http://epubs.surrey.ac.uk/812682/}
+    url = {http://epubs.surrey.ac.uk/812682/},
+    keywords = {"maruss"}
 }
 
 @inproceedings{Roma_2016c,
@@ -115,7 +121,8 @@ DNNs are typically trained to estimate a timefrequency
 mask using ground truth examples. In this submission,
 we combine DNN estimation as a first step with
 traditional refinement via F0 estimation, using the YINFFT
-algorithm.}
+algorithm.},
+keywords = {"maruss"}
 }
 
 @inproceedings{DBLP:conf/eusipco/Simpson_2016,
@@ -145,7 +152,8 @@ algorithm.}
             contemporary music. Using nonparametric statistics, we establish
             reliable evidence for meaningful conclusions about the performance
             of the various models.
-    }
+    },
+    keywords = {"maruss"}
 }
 
 @Inbook{Grais_2017,
@@ -166,7 +174,8 @@ pages="236--246",
 abstract="The sources separated by most single channel audio source separation techniques are usually distorted and each separated source contains residual signals from the other sources. To tackle this problem, we propose to enhance the separated sources to decrease the distortion and interference between the separated sources using deep neural networks (DNNs). Two different DNNs are used in this work. The first DNN is used to separate the sources from the mixed signal. The second DNN is used to enhance the separated signals. To consider the interactions between the separated sources, we propose to use a single DNN to enhance all the separated sources together. To reduce the residual signals of one source from the other separated sources (interference), we train the DNN for enhancement discriminatively to maximize the dissimilarity between the predicted sources. The experimental results show that using discriminative enhancement decreases the distortion and interference between the separated sources.",
 isbn="978-3-319-53547-0",
 doi="10.1007/978-3-319-53547-0_23",
-url="http://epubs.surrey.ac.uk/813112/"
+url="http://epubs.surrey.ac.uk/813112/",
+keywords = {"maruss"}
 }
 
 
@@ -190,7 +199,8 @@ pages="211--221",
 abstract="Source separation evaluation is typically a top-down process, starting with perceptual measures which capture fitness-for-purpose and followed by attempts to find physical (objective) measures that are predictive of the perceptual measures. In this paper, we take a contrasting bottom-up approach. We begin with the physical measures provided by the Blind Source Separation Evaluation Toolkit (BSS Eval) and we then look for corresponding perceptual correlates. This approach is known as psychophysics and has the distinct advantage of leading to interpretable, psychophysical models. We obtained perceptual similarity judgments from listeners in two experiments featuring vocal sources within musical mixtures. In the first experiment, listeners compared the overall quality of vocal signals estimated from musical mixtures using a range of competing source separation methods. In a loudness experiment, listeners compared the loudness balance of the competing musical accompaniment and vocal. Our preliminary results provide provisional validation of the psychophysical approach.",
 isbn="978-3-319-53547-0",
 doi="10.1007/978-3-319-53547-0_21",
-url="http://epubs.surrey.ac.uk/813113/"
+url="http://epubs.surrey.ac.uk/813113/",
+keywords = {"maruss"}
 }
 
 @inproceedings{Grais_2017,
@@ -219,8 +229,8 @@ Most single channel audio source separation (SCASS) approaches produce separated
     the distortions of the separated sources. Our experimental results show that
     using two stages of separation improves the quality of the separated signals
     by decreasing the interference between the separated sources and distortions
-    compared to separating the sources using a single stage of separation.}
-}
+    compared to separating the sources using a single stage of separation.},
+keywords = {"maruss"}
 }
 
 @article{Grais_2017b, 
@@ -235,7 +245,8 @@ abstract={Most single channel audio source separation approaches produce separat
 doi={10.1109/TASLP.2017.2716443}, 
 ISSN={2329-9290}, 
 month={Sept},
-url={http://epubs.surrey.ac.uk/841432/}
+url={http://epubs.surrey.ac.uk/841432/},
+keywords = {"maruss"}
 }
 
 @inproceedings{Ward_2017,
@@ -259,7 +270,8 @@ url={http://epubs.surrey.ac.uk/841432/}
             root-mean-square error of 1.2 LU, with superior performance obtained
             on vocals.
     },
-    url = {http://epubs.surrey.ac.uk/841966/}
+    url = {http://epubs.surrey.ac.uk/841966/},
+    keywords = {"maruss"}
 }
 
 @inproceedings{Wierstorf_2017,
@@ -286,7 +298,8 @@ url={http://epubs.surrey.ac.uk/841432/}
             algorithms are able to increase the level of the vocals by up to 6
             dB at the cost of introducing a small but perceptible degradation in
             sound quality.
-    }
+    },
+    keywords = {"maruss"}
 }
 
 
@@ -314,5 +327,23 @@ In deep neural networks with convolutional layers, each layer typically has
     compared to feedforward deep neural networks (DNNs) and single resolution
     deep fully convolutional neural networks (FCNNs) on the audio source
     separation problem.
-   }
+   },
+   keywords = {"maruss"}
+}
+
+@MastersThesis{Palm_2012,
+    author = {R. B. Palm},
+    title = {Prediction as a candidate for learning deep hierarchical models of data},
+    year = {2012},
+    school = {Technical University of Denmark},
+    address = {Denmark},
+}
+
+@inproceedings{Bittner_2014,
+    title     = {MedleyDB: A Multitrack Dataset for Annotation-Intensive MIR Research},
+    author    = {R. Bittner, J. Salamon, M. Tierney, M. Mauch, C. Cannam and J. P. Bello},
+    booktitle = {Proceedings of the 15th International Society for Music Information Retrieval Conference},
+    address   = {Taipei, Taiwan},
+    month     = {October},
+    year      = {2014},
 }

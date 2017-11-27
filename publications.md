@@ -5,4 +5,4 @@ title: Publications
 menu: true
 ---
 
-{% bibliography -g year %}
+{% bibliography --query @*[keywords="maruss"] -g year %}

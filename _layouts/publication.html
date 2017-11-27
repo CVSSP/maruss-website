@@ -2,6 +2,8 @@
 layout: page
 ---
 
+{{ page.links.md }}
+
 {% if page.entry.abstract %}
 <h2> Abstract </h2>
 {{ page.entry.abstract }}
@@ -17,7 +19,7 @@ layout: page
 {% endif %}
 
 <!-- Bit of a hack but does the job -->
-{% assign resources = site.publication_resources %}
+{% assign resources = site.publication_details %}
     {% for item in resources %}
         {% if item.title == page.entry.key %}
             {{ item | markdownify }}

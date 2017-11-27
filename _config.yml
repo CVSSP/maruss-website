@@ -32,14 +32,16 @@ exclude:
   - Gemfile.lock
 exclude: [vendor]
 collections:
-    publication_resources:
-        output: true
+    publication_details:
+        output: false
 scholar:
+    style: ./_bibliography/ieee-with-url.csl
+    replace_strings: true
     bibliography_template: publications
     details_layout: publication.html
-    details_link:   Details
+    details_link:   "{ Details }"
     details_dir: publications
-    bibliography: bibliography.bib
     sort_by: year, month
     order: descending
     group_order: descending
+    repository: ./assets/pdfs
