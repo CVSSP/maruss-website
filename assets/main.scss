@@ -2,11 +2,60 @@
 ---
 
 @import "{{ site.theme }}";
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-h1 {
-    font-color: red !important;
-}
+
+/* Colour-blind friendly */
+$blue1: #0072b2;
+$green1: #009e73;
+$orange1: #d55e00;
+$pink1: #cc79a7;
+$yellow1: #f0e442;
+$blue2: #56b4e9;
+$blue3: #0072b2;
+$green2: #009e73;
+$orange2: #d55e00;
+$pink2: #cc79a7;
+$pink3: #ffedf7;
+$grey: #efefef;
+
+h1 { color: $blue1; }
+h2 { color: $pink2; }
+.site-nav .page-link {color: $blue2 !important; }
+a {color: $blue2 !important; }
 
 ol li {
-    padding: 10px 5px !important;
+    padding: 10px 0px !important;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+}
+
+pre, code {
+    font-family: 'Ubuntu Mono';
+    background-color: $pink3;
+}
+
+
+.site-header, .site-footer {
+    border-top: 0;
+    border-bottom: 0;
+    background-color: $grey;
+}
+
+footer.site-footer {
+}
+
+main.page-content {
+    min-height: calc(60vh);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
