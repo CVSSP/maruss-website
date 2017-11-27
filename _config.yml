@@ -20,6 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Musical Audio Repurposing using Source Separation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+primary_bibtex_group: "maruss"
 
 # Build settings
 markdown: kramdown
@@ -30,6 +31,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README
 exclude: [vendor]
 collections:
     publication_details:

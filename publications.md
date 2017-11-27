@@ -5,4 +5,12 @@ title: Publications
 menu: true
 ---
 
-{% bibliography --query @*[keywords="maruss"] -g year %}
+{% assign group = site.primary_bibtex_group %}
+
+<div class='publications'>
+{% if group == blank %}
+    {% bibliography -g year %}
+{% else %}
+    {% bibliography --query @*[keywords="{{ group }}"] -g year %}
+{% endif %}
+</div>
