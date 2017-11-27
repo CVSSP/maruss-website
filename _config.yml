@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Musical Audio Repurposing using Source Separation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-primary_bibtex_group: "maruss"
+query_by_this_bibtex_keyword: "maruss"
 
 # Build settings
 markdown: kramdown
@@ -39,6 +39,7 @@ collections:
 scholar:
     style: ./_bibliography/ieee-with-url.csl
     replace_strings: true
+    bibliography: references.bib
     bibliography_template: publications
     details_layout: publication.html
     details_link:   "{ Details }"

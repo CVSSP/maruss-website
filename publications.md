@@ -5,7 +5,7 @@ title: Publications
 menu: true
 ---
 
-{% assign group = site.primary_bibtex_group %}
+{% assign group = site.query_by_this_bibtex_keyword %}
 
 <div class='publications'>
 {% if group == blank %}
