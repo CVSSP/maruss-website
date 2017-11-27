@@ -18,8 +18,8 @@ $blue3: #0072b2;
 $green2: #009e73;
 $orange2: #d55e00;
 $pink2: #cc79a7;
-$pink3: #ffedf7;
 $grey: #efefef;
+$green3: #d4f7ed;
 
 h1 { color: $blue1; }
 h2 { color: $pink2; }
@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 
 pre, code {
     font-family: 'Ubuntu Mono';
-    background-color: $pink3;
+    background-color: $green3;
 }
 
 
