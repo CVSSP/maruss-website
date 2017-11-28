@@ -20,12 +20,26 @@ $orange2: #d55e00;
 $pink2: #cc79a7;
 $grey: #efefef;
 $green3: #d4f7ed;
+$grey-blue: #343e4f;
 
-h1 { color: $blue1; }
-h2 { color: $pink2; }
-.site-nav .page-link {color: $blue2 !important; }
-a {color: $blue2 !important; }
-a.pdf-link {color: $pink2 !important; }
+/* user friendly config */
+$header1-colour: $blue1;
+$header2-colour: $pink2;
+$link-colour: $blue2;
+$pdf-link-colour: $pink2;
+$header-background-colour: $grey;
+$footer-background-colour: white;
+$background-colour: white;
+$menu-item-colour: $blue2;
+$code-background-colour: $green3;
+$font-color: $grey-blue;
+
+/* CSS */
+h1 { color: $header1-colour; }
+h2 { color: $header2-colour; }
+.site-nav .page-link {color: $menu-item-colour !important; }
+a {color: $link-colour !important; }
+a.pdf-link {color: $pdf-link-colour !important; }
 
 ol li {
     padding: 10px 0px !important;
@@ -33,6 +47,8 @@ ol li {
 
 body {
     font-family: 'Roboto';
+    color: $font-color;
+    background-color: $background-colour;
 }
 
 h1, h2, h3, h4 {
@@ -42,17 +58,16 @@ h1, h2, h3, h4 {
 
 pre, code {
     font-family: 'Ubuntu Mono';
-    background-color: $green3;
+    background-color: $code-background-colour;
 }
 
 
-.site-header, .site-footer {
-    border-top: 0;
-    border-bottom: 0;
-    background-color: $grey;
+.site-header {
+    background-color: $header-background-colour;
 }
 
 footer.site-footer {
+    background-color: $footer-background-colour;
 }
 
 main.page-content {
