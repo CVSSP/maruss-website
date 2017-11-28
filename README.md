@@ -2,20 +2,38 @@
 
 - This is the website for the EPSRC-funded project: Musical Audio Repurposing using Source Separation (MARuSS)
 
-- This repository should be useful for setting up a simple website suited for the academic blogger
+- This repository might be useful for setting up a simple website suited for the academic blogger
 
 - We are using the simple [Minima](https://github.com/jekyll/minima) Jekyll theme with some personalised styling
 
 - References are handled by the excellent [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)
 
-## Installing Jekyll
-
-ADD...
-
-
 ## Setting up your own site
 
-Add posts...
+### Jekyll Requirements
+
+1. Install install [Ruby](https://www.ruby-lang.org/en/). It is recommended that
+   you install Ruby with `rbenv`, see [here]( https://gorails.com/setup/ubuntu/16.04#ruby) for example.
+
+2. Install Bundler:
+```
+gem install bundler
+```
+
+### GitHub Pages
+
+- Clone this repository
+
+- Connect your remote repository on GitHub:
+```
+git remote set-url origin https://github.com/username-or-organization-name/your-remote-repository-name
+```
+- Move inside and run:
+```
+bundle install
+```
+
+### Configuration and structure
 
 - After reading this, check and modify the values in `_config.yml` (it is documented)
 
