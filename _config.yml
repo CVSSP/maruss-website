@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MARuSS
-author: ""
+title: MARuSS # The title of your site
+author: "" # Will be shown in footer
 email: contact email
-description: > # this means to ignore newlines until "baseurl:"
+description: > # Add a short description below:
   Musical Audio Repurposing using Source Separation
-baseurl: "/maruss-website" # the subpath of your site, e.g. /blog
+baseurl: "/maruss-website" # the name of your repository
 url: "https://cvssp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-query_by_this_bibtex_keyword: "maruss"
+query_by_this_bibtex_keyword: "maruss" # This can be empty, but you should use a keyword to separate your publications from others
 
 # Build settings
 markdown: kramdown
@@ -37,14 +37,14 @@ collections:
     publication_details:
         output: false
 scholar:
-    style: ./_bibliography/ieee-with-url.csl
+    style: ./_bibliography/ieee-with-url.csl # Add any citation style file you like
     replace_strings: true
-    bibliography: references.bib
+    bibliography: references.bib # The name if the default bib file (should live in ./_bibliography)
     bibliography_template: publications
     details_layout: publication.html
-    details_link:   "{ Details }"
+    details_link:   "{ Details }" # The text used to link to the details page
     details_dir: publications
-    sort_by: year, month
+    sort_by: year, month # Add any sorting preference here (see https://github.com/inukshuk/jekyll-scholar)
     order: descending
     group_order: descending
-    repository: ./assets/pdfs
+    repository: ./assets/pdfs # Location of your pdf files
