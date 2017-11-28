@@ -19,7 +19,7 @@ email: contact email
 description: > # this means to ignore newlines until "baseurl:"
   Musical Audio Repurposing using Source Separation
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cvssp.github.io/maruss-website" # the base hostname & protocol for your site, e.g. http://example.com
 query_by_this_bibtex_keyword: "maruss"
 
 # Build settings
