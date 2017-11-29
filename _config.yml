@@ -14,8 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: MARuSS # The title of your site
-author: "" # Will be shown in footer
+author:
 email:
+contact_url: "https://www.surrey.ac.uk/cvssp/people/mark_plumbley/"
 footer_heading:
 description: > # Add a short description below:
   Musical Audio Repurposing using Source Separation

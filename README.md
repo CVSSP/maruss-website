@@ -78,8 +78,10 @@
     }
     ```
     and then `_publication_details/bob_1933.md` might give some additional information
-    on the details page (no frontmatter is needed for this):
+    on the details page (only empty frontmatter is needed for this):
     ```
+    ---
+    ---
     ## Aditional information
 
     All information here will be appended to the details page which will show up at
