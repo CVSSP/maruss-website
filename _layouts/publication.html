@@ -4,11 +4,11 @@ layout: page
 
 <ul>
 {% if page.entry.doi %}
-<li>DOI: <a href="http://dx.doi.org/{{page.entry.doi}}">{{ page.entry.doi }}</a></li>
+<li><p>DOI: <a href="http://dx.doi.org/{{page.entry.doi}}">{{ page.entry.doi}}</a></p></li>
 {% endif %}
 
 {% if page.entry.url %}
-<li>Link: <a href="{{page.entry.url}}">{{ page.entry.url }}</a></li>
+<li><p>Link: <a href="{{page.entry.url}}">{{ page.entry.url }}</a></p></li>
 {% endif %}
 </ul>
 

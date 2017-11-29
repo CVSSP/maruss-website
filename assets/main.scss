@@ -64,6 +64,15 @@ ol li {
     padding: 10px 0px !important;
 }
 
+ul > li {
+    color: $green3;
+}
+ul > li > p {
+    color: $font-color;
+}
+
+
+
 .site-header {
     background-color: $header-background-colour;
     border-top: 0;
