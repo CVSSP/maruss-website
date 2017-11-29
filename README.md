@@ -57,7 +57,10 @@
 
 - Put your bibtex file in the `./_bibliography` folder. If it's not called `references.bib`, update the value of `scholar > bibliography` in `./_config.yml` accordingly.
 
-- The entire bibliography of `./bibliography/references.bib` is generated, via [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar), on the `publications` page. You can limit the selection to those entries with the (single) keyword given by the option `query_by_this_bibtex_keyword` in `./_config.yml`. This is useful for listing only those publications corresponding to the author(s) of the website (by default it is `maruss`).
+- If you don't want to use the default IEEE citation style, add your desired
+    `cls` file in the `_./bibliography` folder and update the value of `scholar > style` in `./_config.yml`. Note that provided `cls` files have been modified so that the citation number does not appear in the publication list (see [this](https://techblog.lankes.org/2015/04/06/From-Wordpress-to-Jekyll/) for more info).
+
+- The entire bibliography of `./bibliography/references.bib` is generated, via [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar), on the `publications` page. You can limit the selection to those entries with the (single) keyword given by the option `query_by_this_bibtex_keyword` in `./_config.yml`. This is useful for listing those publications belonging to the author(s) of the website (by default it is `maruss`).
 
 - If you want PDFs to be downloadable via a link attached to each reference, dump them in `assets/pdfs`. The only convention is that the filename of the PDF associated with a given bibtex entry should match the key, e.g.
     ```
@@ -89,7 +92,7 @@
     ```
     bundle exec jekyll serve
     ```
-    and then visit `http://127.0.0.1:4000/your-repository-name`
+    and then visit the printed server address, e.g. `http://127.0.0.1:4000/your-repository-name/`
 
 - To publish your site on GitHub pages:
     ```
