@@ -35,15 +35,13 @@ $code-background-colour: $green3;
 $font-color: $grey-blue;
 
 /* CSS */
+
+// Colours and fonts
 h1 { color: $header1-colour; }
 h2 { color: $header2-colour; }
 .site-nav .page-link {color: $menu-item-colour !important; }
 a {color: $link-colour !important; }
 a.pdf-link {color: $pdf-link-colour !important; }
-
-ol li {
-    padding: 10px 0px !important;
-}
 
 body {
     font-family: 'Roboto';
@@ -61,18 +59,47 @@ pre, code {
     background-color: $code-background-colour;
 }
 
+// Lists
+ol li {
+    padding: 10px 0px !important;
+}
 
 .site-header {
     background-color: $header-background-colour;
     border-top: 0;
 }
 
+/*  Keep footer at the bottom of the page
+    https://codepen.io/cbracco/pen/zekgx
+*/
+
 footer.site-footer {
+    position: absolute;
     background-color: $footer-background-colour;
+    padding-top: 0;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
 }
 
 main.page-content {
-    min-height: calc(60vh);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 2rem;
+    padding-bottom: 100px;
 }
