@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-menu: true
+menu_order: 2
 ---
 
 Delivery of audio has become increasingly complex: originally in single channel (mono) or 2-channel stereo format, now surround sound in "5.1" format (5 main speakers plus one low frequency effects channel) is available in many home cinema systems, and many other multichannel audio formats are available (e.g. 6.1, 7.1, 10.2 and 22.2). In addition, new interactive apps allow users to remix musical audio, changing instrument volumes, and music games allow players to control individual instruments. Content creators therefore have to develop new ways to create and distribute their audio content to allow their content to be played back on these multichannel systems, or remixed by users to suit their own tastes.

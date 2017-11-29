@@ -15,7 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: MARuSS # The title of your site
 author: "" # Will be shown in footer
-email: contact email
+email:
+footer_heading:
 description: > # Add a short description below:
   Musical Audio Repurposing using Source Separation
 baseurl: "/maruss-website" # the name of your repository

@@ -48,12 +48,14 @@
     layout: page
     permalink: /publications/
     title: Publications
-    menu: true
+    menu_order: 1
     ---
 
     ## My Content
 
     ```
+    `menu_order` specifies the order in which a page will be displayed in the
+    header. Omit this key if you do not wish for a page to appear in the menu.
 
 - Put your bibtex file in the `./_bibliography` folder. If it's not called `references.bib`, update the value of `scholar > bibliography` in `./_config.yml` accordingly.
 

@@ -2,7 +2,7 @@
 layout: page
 title: People
 permalink: /people/
-menu: true
+menu_order: 3
 ---
 
 # Investigators

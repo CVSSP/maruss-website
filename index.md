@@ -2,6 +2,7 @@
 layout: default
 title: Home
 menu: true
+menu_order: 1
 ---
 
 MARuSS is an EPSRC-funded research project (EP/L027119/1) that aims at
