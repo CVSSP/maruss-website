@@ -472,9 +472,6 @@ a {
 a.pdf-link {
   color: #cc79a7 !important; }
 
-ol li {
-  padding: 10px 0px !important; }
-
 body {
   font-family: 'Roboto';
   color: #343e4f;
@@ -488,14 +485,45 @@ pre, code {
   font-family: 'Ubuntu Mono';
   background-color: #d4f7ed; }
 
+ol li {
+  padding: 10px 0px !important; }
+
+ul > li {
+  color: #d4f7ed; }
+
+ul > li > p {
+  color: #343e4f; }
+
 .site-header {
   background-color: #efefef;
   border-top: 0; }
 
+/*  Keep footer at the bottom of the page
+    https://codepen.io/cbracco/pen/zekgx
+*/
 footer.site-footer {
-  background-color: white; }
+  position: absolute;
+  background-color: white;
+  padding-top: 0;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  position: relative;
+  min-height: 100%;
+  width: 100%; }
 
 main.page-content {
-  min-height: calc(60vh);
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-top: 2rem;
+  padding-bottom: 100px; }
