@@ -2,7 +2,15 @@
 layout: page
 ---
 
-{{ page.links.md }}
+<ul>
+{% if page.entry.doi %}
+<li>DOI: <a href="http://dx.doi.org/{{page.entry.doi}}">{{ page.entry.doi }}</a></li>
+{% endif %}
+
+{% if page.entry.url %}
+<li>Link: <a href="{{page.entry.url}}">{{ page.entry.url }}</a></li>
+{% endif %}
+</ul>
 
 {% if page.entry.abstract %}
 <h2> Abstract </h2>
@@ -17,6 +25,7 @@ layout: page
 </code>
 </pre>
 {% endif %}
+
 
 <!-- Bit of a hack but does the job -->
 {% assign resources = site.publication_details %}

@@ -37,12 +37,12 @@ collections:
     publication_details:
         output: false
 scholar:
-    style: ./_bibliography/ieee-with-url.csl # Add any citation style file you like
+    style: ./_bibliography/ieee.csl # Add any citation style file you like
     replace_strings: true
     bibliography: references.bib # The name if the default bib file (should live in ./_bibliography)
     bibliography_template: publications
     details_layout: publication.html
-    details_link:   "{ Details }" # The text used to link to the details page
+    details_link:   "{Details}" # The text used to link to the details page
     details_dir: publications
     sort_by: year, month # Add any sorting preference here (see https://github.com/inukshuk/jekyll-scholar)
     order: descending
