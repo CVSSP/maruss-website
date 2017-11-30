@@ -18,6 +18,7 @@ author:
 email:
 contact_url: "https://www.surrey.ac.uk/cvssp/people/mark_plumbley/"
 footer_heading:
+github_username: CVSSP
 description: > # Add a short description below:
   Musical Audio Repurposing using Source Separation
 baseurl: "/maruss-website" # the name of your repository
