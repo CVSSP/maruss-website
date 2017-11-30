@@ -41,7 +41,7 @@
 
 - After reading this, check and modify the values in `_config.yml` (it is documented)
 
-- One-off pages should live in the root folder and use frontmatter along the
+- One-off pages should live in the root directory and use front matter along the
     lines of:
     ```
     ---
@@ -54,22 +54,22 @@
     ## My Content
 
     ```
-    `menu_order` specifies the order in which a page will be displayed in the
+    where `menu_order` specifies the order in which a page will be displayed in the
     header. Omit this key if you do not wish for a page to appear in the menu.
 
-- Put your bibtex file in the `./_bibliography` folder. If it's not called `references.bib`, update the value of `scholar > bibliography` in `./_config.yml` accordingly.
+- Put your bibtex file in the `./_bibliography` directory. If it's not called `references.bib`, update the value of `scholar > bibliography` in `./_config.yml` accordingly.
 
 - If you don't want to use the default IEEE citation style, add your desired
-    `cls` file in the `_./bibliography` folder and update the value of `scholar > style` in `./_config.yml`. Note that provided `cls` files have been modified so that the citation number does not appear in the publication list (see [this](https://techblog.lankes.org/2015/04/06/From-Wordpress-to-Jekyll/) for more info).
+    `cls` file in the `_./bibliography` directory and update the value of `scholar > style` in `./_config.yml`. Note that provided `cls` files have been modified so that the citation number does not appear in the publication list (see [this](https://techblog.lankes.org/2015/04/06/From-Wordpress-to-Jekyll/) for more info). Therefore, don't use these files for anything else...
 
 - The entire bibliography of `./bibliography/references.bib` is generated, via [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar), on the `publications` page. You can limit the selection to those entries with the (single) keyword given by the option `query_by_this_bibtex_keyword` in `./_config.yml`. This is useful for listing those publications belonging to the author(s) of the website (by default it is `maruss`).
 
-- If you want PDFs to be downloadable via a link attached to each reference, dump them in `assets/pdfs`. The only convention is that the filename of the PDF associated with a given bibtex entry should match the key, e.g.
+- If you want PDFs to be downloadable via a link attached to each reference, dump them in `assets/pdfs`. The only convention is that the filename of the PDF associated with a given bibtex entry should match its key, e.g.
     ```
     @article{bob_1933} -> bob_1933.pdf
     ```
 
-- Using your bibtex file, [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar) will automatically generate a details page for each publication listed on the `publications` page. This page will appear at `site_url/publications/bibtex_key.html`. Details include an abstract, the bibtex entry and the DOI. If you want to append additional information to the details page (such as code, references, discussion points etc.), create a markdown file in the folder `_publication_details` whose filename matches the key of the bibtex entry. For example, if `_bibliography/references.bib` contains:
+- Using your bibtex file, [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar) will automatically generate a details page for each publication listed on the `publications` page. This page will appear at `site_url/publications/bibtex_key.html`. Details include an abstract, the bibtex entry and the DOI. If you want to append additional information to the details page (such as code, references, discussion points etc.), create a markdown file in the directory `_publication_details` whose filename matches the key of the bibtex entry. For example, if `_bibliography/references.bib` contains:
     ```
     @article{bob_1933,
     title = {bob},
@@ -78,7 +78,7 @@
     }
     ```
     and then `_publication_details/bob_1933.md` might give some additional information
-    on the details page (only empty frontmatter is needed for this):
+    on the details page (only empty front matter is needed for this):
     ```
     ---
     ---
@@ -87,6 +87,17 @@
     All information here will be appended to the details page which will show up at
     site_url/publications/bob_1933.html
     ```
+
+- Posts should live in the `_posts` directory, following the filename convention
+    `YYYY-MM-DD-name-of-posts.md`. Front matter should be along the lines of:
+    ```
+    ---
+    layout: post
+    title: My Post
+    categories: audio
+    ---
+    ```
+    As with publications, the latest 3 posts will be listed on the home page.
 
 - You can change the colours by giving `assets/main.scss` a quick skim and then tweaking
 

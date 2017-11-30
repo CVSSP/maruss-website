@@ -5,9 +5,9 @@ title: Publications
 menu_order: 4
 ---
 
+<div class='publications'>
 {% assign group = site.query_by_this_bibtex_keyword %}
 
-<div class='publications'>
 {% if group == blank %}
     {% bibliography -g year %}
 {% else %}
