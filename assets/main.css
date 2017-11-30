@@ -488,42 +488,40 @@ pre, code {
 ol li {
   padding: 10px 0px !important; }
 
-ul > li {
+ol {
+  list-style-type: disc;
   color: #d4f7ed; }
+
+li > span {
+  color: #343e4f; }
 
 ul > li > p {
   color: #343e4f; }
 
-.site-header {
-  background-color: #efefef;
-  border-top: 0; }
+ul > li {
+  color: #d4f7ed; }
 
-/*  Keep footer at the bottom of the page
-    https://codepen.io/cbracco/pen/zekgx
-*/
+a.site-title {
+  color: #cc79a7 !important; }
+
+header.site-header {
+  background-color: #efefef;
+  border-top: 0;
+  padding-top: 0px; }
+
 footer.site-footer {
-  position: absolute;
+  min-height: 100px;
   background-color: white;
   padding-top: 0;
-  height: 100px;
-  bottom: 0;
-  right: 0;
-  left: 0; }
-
-html {
-  height: 100%;
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit; }
-
-body {
-  position: relative;
-  min-height: 100%;
-  width: 100%; }
+  padding-bottom: 0; }
 
 main.page-content {
-  padding-top: 2rem;
-  padding-bottom: 100px; }
+  padding-top: 20px;
+  padding-bottom: 0;
+  min-height: calc(100% - 200px); }
+
+html, body {
+  height: 100%; }
+
+* {
+  margin: 0; }
