@@ -61,6 +61,10 @@ pre, code {
     background-color: $code-background-colour;
 }
 
+.highlighter-rouge .highlight {
+    background: $code-background-colour;
+}
+
 // Lists
 ol li {
     padding: 10px 0px !important;
@@ -114,3 +118,4 @@ html, body {
 * {
     margin: 0;
 }
+
