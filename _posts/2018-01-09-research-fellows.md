@@ -10,9 +10,9 @@ Closing Date:  24 January 2018
 
 Applications are invited for two Research Fellow posts:
 
-- Research Fellow in [Source Separation for Musical Audio Repurposing](http://jobs.surrey.ac.uk/107017) (Ref: 107117)
+- Research Fellow in [Source Separation for Musical Audio Repurposing](http://jobs.surrey.ac.uk/107017) (Ref: 107017)
 
-- Research Fellow in [Perceptual Audio Evaluation](http://jobs.surrey.ac.uk/107117) (Ref: 107017)
+- Research Fellow in [Perceptual Audio Evaluation](http://jobs.surrey.ac.uk/107117) (Ref: 107117)
 
 These are to work full-time on an EPSRC funded project “Musical Audio
 Repurposing using Source Separation” from 1 February 2018 to 31 July 2018. This
@@ -88,8 +88,11 @@ or Dr Russell Mason ([r.mason@surrey.ac.uk](mailto:r.mason@surrey.ac.uk)).
 
 For more information and to apply online, please visit: 
 
-- Research Fellow in [Source Separation for Musical Audio Repurposing](http://jobs.surrey.ac.uk/107017) (Ref: 107117)
+- Research Fellow in [Source Separation for Musical Audio Repurposing](http://jobs.surrey.ac.uk/107017) (Ref: 107017)
 
-- Research Fellow in [Perceptual Audio Evaluation](http://jobs.surrey.ac.uk/107117) (Ref: 107017)
+- Research Fellow in [Perceptual Audio Evaluation](http://jobs.surrey.ac.uk/107117) (Ref: 107117)
 
 We acknowledge, understand and embrace diversity.
+
+---
+See also: Research Fellow in [Audio Signal Processing](http://jobs.surrey.ac.uk/000918)
