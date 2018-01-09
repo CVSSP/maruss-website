@@ -485,6 +485,9 @@ pre, code {
   font-family: 'Ubuntu Mono';
   background-color: #d4f7ed; }
 
+.highlighter-rouge .highlight {
+  background: #d4f7ed; }
+
 ol li {
   padding: 10px 0px !important; }
 
