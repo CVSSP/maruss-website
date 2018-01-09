@@ -82,8 +82,9 @@ team of 12 researchers, plus several industrial collaborators, and a range of
 professional facilities of the highest standards, including three recording
 studios and an ITU-R BS 1116 standard critical listening room.
 
-Informal enquires are welcome, to: Prof Mark Plumbley (m.plumbley@surrey.ac.uk)
-or Dr Russell Mason (r.mason@surrey.ac.uk).
+Informal enquires are welcome, to: Prof Mark Plumbley
+([m.plumbley@surrey.ac.uk](mailto:m.plumbley@surrey.ac.uk))
+or Dr Russell Mason ([r.mason@surrey.ac.uk](mailto:r.mason@surrey.ac.uk)).
 
 For more information and to apply online, please visit: 
 
