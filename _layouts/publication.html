@@ -7,6 +7,10 @@ layout: page
 <li><p>DOI: <a href="http://dx.doi.org/{{page.entry.doi}}">{{ page.entry.doi}}</a></p></li>
 {% endif %}
 
+{% if page.entry.openaccess %}
+<li><p>Open access: <a href="{{page.entry.openaccess}}">{{ page.entry.openaccess }}</a></p></li>
+{% endif %}
+
 {% if page.entry.url %}
 <li><p>Link: <a href="{{page.entry.url}}">{{ page.entry.url }}</a></p></li>
 {% endif %}
