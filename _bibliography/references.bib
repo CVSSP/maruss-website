@@ -89,7 +89,7 @@ keywords = {"maruss"}
 @inproceedings{Roma_2016b,
 author = {Roma, G. and Grais, Emad and Simpson, A. J. R and Sobieraj, I. and Plumbley, M. D},
 year = {2016},
-month = {08},
+month = {August},
 title = {Untwist: A New Toolbox for Audio Source Separation},
 booktitle = {Proceedings of the 17th International Society for Music Information
     Retrieval Conference},
@@ -110,7 +110,7 @@ keywords = {"maruss"}
 @inproceedings{Roma_2016c,
 author = {Roma, G. and Grais, Emad and Simpson, A. J. R and Plumbley, M. D},
 year = {2016},
-month = {08},
+month = {August},
 title = {Singing Voice Separation using Deep Neural Networks and f0 Estimation},
 booktitle = {MIREX 2016},
 url = {http://www.music-ir.org/mirex/abstracts/2016/RSGP1.pdf},
@@ -212,22 +212,17 @@ month = {November},
 address = {Montreal, Canada},
 openaccess = {http://epubs.surrey.ac.uk/841860/},
 abstract = {
-Most single channel audio source separation (SCASS) approaches produce separated
-    sources accompanied by interference from other sources and other
-    distortions. To tackle this problem, we propose to separate the sources in
-    two stages. In the first stage, the sources are separated from the mixed
-    signal. In the second stage, the interference between the separated sources
-    and the distortions are reduced using deep neural networks (DNNs). We
-    propose two methods that use DNNs to improve the quality of the separated
-    sources in the second stage. In the first method, each separated source is
-    improved individually using its own trained DNN, while in the second method
-    all the separated sources are improved together using a single DNN. To
-    further improve the quality of the separated sources, the DNNs in the second
-    stage are trained discriminatively to further decrease the interference and
-    the distortions of the separated sources. Our experimental results show that
-    using two stages of separation improves the quality of the separated signals
-    by decreasing the interference between the separated sources and distortions
-    compared to separating the sources using a single stage of separation.},
+    Deep learning techniques have been used recently to tackle the audio source
+    separation problem. In this work, we propose to use deep fully convolutional
+    denoising autoencoders (CDAEs) for monaural audio source separation. We use
+    as many CDAEs as the number of sources to be separated from the mixed
+    signal. Each CDAE is trained to separate one source and treats the other
+    sources as background noise. The main idea is to allow each CDAE to learn
+    suitable spectral-temporal filters and features to its corresponding source.
+    Our experimental results show that CDAEs perform source separation slightly
+    better than the deep feedforward neural networks (FNNs) even with fewer
+    parameters than FNNs.},
+
 keywords = {"maruss"}
 }
 
@@ -242,7 +237,7 @@ pages={1773-1783},
 abstract={Most single channel audio source separation approaches produce separated sources accompanied by interference from other sources and other distortions. To tackle this problem, we propose to separate the sources in two stages. In the first stage, the sources are separated from the mixed signal. In the second stage, the interference between the separated sources and the distortions are reduced using deep neural networks (DNNs). We propose two methods that use DNNs to improve the quality of the separated sources in the second stage. In the first method, each separated source is improved individually using its own trained DNN, while in the second method all the separated sources are improved together using a single DNN. To further improve the quality of the separated sources, the DNNs in the second stage are trained discriminatively to further decrease the interference and the distortions of the separated sources. Our experimental results show that using two stages of separation improves the quality of the separated signals by decreasing the interference between the separated sources and distortions compared to separating the sources using a single stage of separation.}, 
 doi={10.1109/TASLP.2017.2716443}, 
 ISSN={2329-9290}, 
-month={Sept},
+month={September},
 openaccess={http://epubs.surrey.ac.uk/841432/},
 keywords = {"maruss"}
 }
@@ -302,13 +297,13 @@ keywords = {"maruss"}
 
 
 @article{Grais_2017c,
-   author = {{Grais}, E.~M. and {Wierstorf}, H. and {Ward}, D. and {Plumbley}, M.~D.},
+   author = {Grais, E.~M. and Wierstorf, H. and Ward, D. and Plumbley, M. D.},
     title = "{Multi-Resolution Fully Convolutional Neural Networks for Monaural Audio Source Separation}",
   journal = {ArXiv e-prints},
 archivePrefix = "arXiv",
    eprint = {1710.11473},
      year = 2017,
-    month = oct,
+    month = October,
    url = {http://adsabs.harvard.edu/abs/2017arXiv171011473G},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System},
    abstract = {
@@ -327,6 +322,59 @@ In deep neural networks with convolutional layers, each layer typically has
     separation problem.
    },
    keywords = {"maruss"}
+}
+
+@article{Grais_2018,
+    author = {Grais, E. M. and Ward, D. and Plumbley, M. D.},
+    title = {Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders},
+    journal = {ArXiv e-prints},
+    archivePrefix = "arXiv",
+    eprint = {1803.00702},
+    primaryClass = "cs.SD",
+    keywords = {"maruss"},
+    year = 2018,
+    month = March,
+    url = {http://adsabs.harvard.edu/abs/2018arXiv180300702G},
+    adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+    abstract = {
+    Supervised multi-channel audio source separation requires extracting useful
+    spectral, temporal, and spatial features from the mixed signals. The success
+    of many existing systems is therefore largely dependent on the choice of
+    features used for training.  In this work, we introduce a novel
+    multi-channel,multiresolution convolutional auto-encoder neural network that
+    works on raw time-domain signals to determine appropriate multiresolution
+    features for separating the singing-voice from stereo music. Our
+    experimental results show that the proposed method can achieve multi-channel
+    audio source separation without the need for hand-crafted features or any
+    pre- or post-processing.
+    }
+}
+
+@inproceedings{Ward_2018,
+	year = 2018,
+	month = {April},
+	publisher = {{IEEE}},
+	author = {Dominic Ward and Hagen Wierstorf and Russell D. Mason and Emad M. Grais and Mark D. Plumbley},
+	title = {{{BSS EVAL or PEASS?} Predicting the Perception of Singing-Voice Separation}},
+	booktitle = {2018 {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
+    abstract = {
+        There is some uncertainty as to whether objective metrics for predicting
+        the perceived quality of audio source separation are sufficiently
+        accurate.  This issue was investigated by employing a revised
+        experimental methodology to collect subjective ratings of sound
+        quality and interference of singing-voice recordings that have been
+        extracted from musical mixtures using state-of-the-art audio source
+        separation. A correlation analysis between the experimental data and
+        the measures of two objective evaluation toolkits, BSS Eval and
+        PEASS, was performed to assess their performance. The
+        artifacts-related perceptual score of the PEASS toolkit had the
+        strongest correlation with the perception of artifacts and
+        distortions caused by singing-voice separation. Both the
+        source-to-interference ratio of BSS Eval and the
+        interference-related perceptual score of PEASS showed comparable
+        correlations with the human ratings of interference.
+    },
+    keywords = {"maruss"}
 }
 
 @MastersThesis{Palm_2012,
