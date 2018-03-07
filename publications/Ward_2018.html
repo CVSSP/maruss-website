@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Single-Channel Audio Source Separation Using Deep Neural Network Ensembles</title>
+  <title>BSS EVAL or PEASS? Predicting the Perception of Singing-Voice Separation</title>
   <meta name="description" content="Musical Audio Repurposing using Source Separation">
 
   <link rel="stylesheet" href="/maruss-website/assets/main.css">
-  <link rel="canonical" href="https://cvssp.github.io/maruss-website/publications/Grais_2016.html">
+  <link rel="canonical" href="https://cvssp.github.io/maruss-website/publications/Ward_2018.html">
   <link rel="alternate" type="application/rss+xml" title="MARuSS" href="/maruss-website/feed.xml">
   
   
@@ -112,7 +112,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Single-Channel Audio Source Separation Using Deep Neural Network Ensembles</h1>
+    <h1 class="post-title">BSS EVAL or PEASS? Predicting the Perception of Singing-Voice Separation</h1>
   </header>
 
   <div class="post-content">
@@ -122,45 +122,40 @@
 
 
 
-<li><p>Link: <a href="http://www.aes.org/e-lib/browse.cfm?elib=18193">http://www.aes.org/e-lib/browse.cfm?elib=18193</a></p></li>
-
 </ul>
 
 
 <h2> Abstract </h2>
-Deep neural networks (DNNs) are often used to tackle the single
-        channel source separation (SCSS) problem by predicting time-frequency
-            masks. The predicted masks are then used to separate the sources
-            from the mixed signal. Different types of masks produce separated
-            sources with different levels of distortion and interference. Some
-            types of masks produce separated sources with low distortion, while
-            other masks produce low interference between the separated sources.
-            In this paper a combination of different DNNs’ predictions (masks)
-            is used for SCSS to achieve better quality of the separated sources
-            than using each DNN individually. We train four different DNNs by
-            minimizing four different cost functions to predict four different
-            masks. The first and second DNNs are trained to approximate
-            reference binary and soft masks. The third DNN is trained to predict
-            a mask from the reference sources directly. The last DNN is trained
-            similarly to the third DNN but with an additional discriminative
-            constraint to maximize the differences between the estimated
-            sources. Our experimental results show that combining the
-            predictions of different DNNs achieves separated sources with better
-            quality than using each DNN individually.
+
+        There is some uncertainty as to whether objective metrics for predicting
+        the perceived quality of audio source separation are sufficiently
+        accurate.  This issue was investigated by employing a revised
+        experimental methodology to collect subjective ratings of sound
+        quality and interference of singing-voice recordings that have been
+        extracted from musical mixtures using state-of-the-art audio source
+        separation. A correlation analysis between the experimental data and
+        the measures of two objective evaluation toolkits, BSS Eval and
+        PEASS, was performed to assess their performance. The
+        artifacts-related perceptual score of the PEASS toolkit had the
+        strongest correlation with the perception of artifacts and
+        distortions caused by singing-voice separation. Both the
+        source-to-interference ratio of BSS Eval and the
+        interference-related perceptual score of PEASS showed comparable
+        correlations with the human ratings of interference.
+    
 
 
 
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
-@conference{Grais_2016,
-  title = {Single-Channel Audio Source Separation Using Deep Neural Network Ensembles},
-  author = {Grais, E. M. and Roma, G. and Simpson, A. J. R. and Plumbley, M. D.},
-  booktitle = {Audio Engineering Society Convention 140},
-  month = may,
-  year = {2016},
-  address = {Paris, France},
-  url = {http://www.aes.org/e-lib/browse.cfm?elib=18193},
+@inproceedings{Ward_2018,
+  year = {2018},
+  month = apr,
+  publisher = {{IEEE}},
+  author = {Ward, Dominic and Wierstorf, Hagen and Mason, Russell D. and Grais, Emad M. and Plumbley, Mark D.},
+  title = {{{BSS EVAL or PEASS?} Predicting the Perception of Singing-Voice Separation}},
+  booktitle = {2018 {IEEE} International Conference on Acoustics, Speech and Signal Processing ({ICASSP})},
   keywords = {"maruss"}
 }
 
@@ -172,13 +167,6 @@ Deep neural networks (DNNs) are often used to tackle the single
 <!-- Bit of a hack but does the job -->
 
     
-        
-            <h2 id="implementation">Implementation</h2>
-
-<p>You can download (beta) the code
-<a href="http://cvssp.org/projects/maruss/new_web/download/dnnensemblescss.tar.gz">here</a>.
-The software is distributed under BSD license. If you use it, please cite us.</p>
-
         
 
         

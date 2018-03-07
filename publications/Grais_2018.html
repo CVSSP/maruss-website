@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Single Channel Audio Source Separation using Convolutional Denoising Autoencoders</title>
+  <title>Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders</title>
   <meta name="description" content="Musical Audio Repurposing using Source Separation">
 
   <link rel="stylesheet" href="/maruss-website/assets/main.css">
@@ -80,6 +80,10 @@
         
         
         
+        
+        
+        
+        
           <a class="page-link" href="/maruss-website/about/">About</a>
         
         
@@ -108,7 +112,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Single Channel Audio Source Separation using Convolutional Denoising Autoencoders</h1>
+    <h1 class="post-title">Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders</h1>
   </header>
 
   <div class="post-content">
@@ -116,47 +120,44 @@
 
 
 
-<li><p>Open access: <a href="http://epubs.surrey.ac.uk/841860/">http://epubs.surrey.ac.uk/841860/</a></p></li>
 
 
+<li><p>Link: <a href="http://adsabs.harvard.edu/abs/2018arXiv180300702G">http://adsabs.harvard.edu/abs/2018arXiv180300702G</a></p></li>
 
 </ul>
 
 
 <h2> Abstract </h2>
 
-Most single channel audio source separation (SCASS) approaches produce separated
-    sources accompanied by interference from other sources and other
-    distortions. To tackle this problem, we propose to separate the sources in
-    two stages. In the first stage, the sources are separated from the mixed
-    signal. In the second stage, the interference between the separated sources
-    and the distortions are reduced using deep neural networks (DNNs). We
-    propose two methods that use DNNs to improve the quality of the separated
-    sources in the second stage. In the first method, each separated source is
-    improved individually using its own trained DNN, while in the second method
-    all the separated sources are improved together using a single DNN. To
-    further improve the quality of the separated sources, the DNNs in the second
-    stage are trained discriminatively to further decrease the interference and
-    the distortions of the separated sources. Our experimental results show that
-    using two stages of separation improves the quality of the separated signals
-    by decreasing the interference between the separated sources and distortions
-    compared to separating the sources using a single stage of separation.
+    Supervised multi-channel audio source separation requires extracting useful
+    spectral, temporal, and spatial features from the mixed signals. The success
+    of many existing systems is therefore largely dependent on the choice of
+    features used for training.  In this work, we introduce a novel
+    multi-channel,multiresolution convolutional auto-encoder neural network that
+    works on raw time-domain signals to determine appropriate multiresolution
+    features for separating the singing-voice from stereo music. Our
+    experimental results show that the proposed method can achieve multi-channel
+    audio source separation without the need for hand-crafted features or any
+    pre- or post-processing.
+    
 
 
 
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
-@inproceedings{Grais_2018,
-  author = {Grais, Emad M and Plumbley, M. D},
-  year = {2017},
-  title = {Single Channel Audio Source Separation using Convolutional Denoising Autoencoders},
-  booktitle = {Proceedings of the 5th IEEE Global Conference on Signal and
-      Information Processing (GlobalSIP2017)},
-  month = nov,
-  address = {Montreal, Canada},
-  openaccess = {http://epubs.surrey.ac.uk/841860/},
-  keywords = {"maruss"}
+@article{Grais_2018,
+  author = {Grais, E. M. and Ward, D. and Plumbley, M. D.},
+  title = {Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders},
+  journal = {ArXiv e-prints},
+  archiveprefix = {arXiv},
+  eprint = {1803.00702},
+  primaryclass = {cs.SD},
+  keywords = {"maruss"},
+  year = {2018},
+  month = mar,
+  url = {http://adsabs.harvard.edu/abs/2018arXiv180300702G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
 </code>
