@@ -22,12 +22,16 @@ menu_order: 3
 
 - Emad Grais
 
-- Hagen Wierstorf
-
 - Dominic Ward
+
+- Manal Helal
+
+- Chungeun (Ryan) Kim
 
 # Past researchers
 
 - Gerard Roma
 
 - Andrew Simpson
+
+- Hagen Wierstorf
