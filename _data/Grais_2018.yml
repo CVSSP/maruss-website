@@ -1,0 +1,39 @@
+back_button_can_exit_test: true
+continuous_playback: true
+loop_playback: true
+rows:
+    - name: 'Song 42 (SDR: 7.1 dB)'
+      sounds:
+          - button_label: Mixture
+            url: audio/Grais_2018/song_42_mix.flac
+          - button_label: Estimated Vocal
+            url: audio/Grais_2018/song_42_vox.flac
+          - button_label: Estimated Accompaniment
+            url: audio/Grais_2018/song_42_accomp.flac
+
+    - name: 'Song 15 (SDR: 6.3 dB)'
+      sounds:
+          - button_label: Mixture
+            url: audio/Grais_2018/song_15_mix.flac
+          - button_label: Estimated Vocal
+            url: audio/Grais_2018/song_15_vox.flac
+          - button_label: Estimated Accompaniment
+            url: audio/Grais_2018/song_15_accomp.flac
+
+    - name: 'Song 20 (SDR: 3.1 dB)'
+      sounds:
+          - button_label: Mixture
+            url: audio/Grais_2018/song_20_mix.flac
+          - button_label: Estimated Vocal
+            url: audio/Grais_2018/song_20_vox.flac
+          - button_label: Estimated Accompaniment
+            url: audio/Grais_2018/song_20_accomp.flac
+
+    - name: 'Song 1 (SDR: 0.6 dB)'
+      sounds:
+          - button_label: Mixture
+            url: audio/Grais_2018/song_1_mix.flac
+          - button_label: Estimated Vocal
+            url: audio/Grais_2018/song_1_vox.flac
+          - button_label: Estimated Accompaniment
+            url: audio/Grais_2018/song_1_accomp.flac
