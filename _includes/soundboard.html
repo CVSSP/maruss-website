@@ -1,0 +1,35 @@
+<ul class="soundboard-container">
+ 
+
+{% for row in include.config.rows %}
+
+<p> {{ row.name }} </p>
+
+<li>
+
+{% for sound in row.sounds %}
+
+<button class="soundboard-play" data-inline="true">{{ sound.button_label }}</button>
+
+{% endfor %}
+
+</li>
+
+{% endfor %}
+
+<button class="soundboard-stop" data-inline="true">Stop Audio</button>
+
+</ul>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var config = JSON.parse('{{ include.config | jsonify}}')
+
+        config.siteURL = '{{ site.url }}{{ site.baseurl }}'
+
+        var soundboard = new Soundboard(config)
+    })
+
+</script>
