@@ -5,15 +5,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders</title>
-  <meta name="description" content="Musical Audio Repurposing using Source Separation">
-
   <link rel="stylesheet" href="/maruss-website/assets/main.css">
-  <link rel="canonical" href="https://cvssp.github.io/maruss-website/publications/Grais_2018.html">
-  <link rel="alternate" type="application/rss+xml" title="MARuSS" href="/maruss-website/feed.xml">
+
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   
-  
+  <script src="/maruss-website/assets/js/main.js"></script>
+
 </head>
 
 
@@ -35,6 +33,8 @@
       </span>
 
       <div class="trigger">
+        
+        
         
         
         
@@ -168,6 +168,135 @@
 <!-- Bit of a hack but does the job -->
 
     
+        
+
+        
+            <h2 id="audio-examples">Audio Examples</h2>
+
+<p>The performance of this system was assessed using the <a href="http://bass-db.gforge.inria.fr/bss_eval/">BSS
+Eval</a> toolkit. We extracted the
+singing-voice (vocals) from 46 different rock and pop songs which were used
+for the evaluation stage of the music separation challenge of <a href="http://sisec17.audiolabs-erlangen.de/#/about">SiSEC
+2016</a>.</p>
+
+<p>The following examples are provided to show some of the best and worst of the
+estimated vocals and estimated accompaniment from the SiSEC 2016 dataset.
+Source-to-distortion ratios (SDR; in decibels) refer to those measured on the
+singing voice over the entire audio file, with the original vocals and
+accompaniment used as ground truth. Our average SDR across the 46
+songs was 4.25 dB, with a standard deviation of 1.5 dB.</p>
+
+<p><ul class="soundboard-container">
+ 
+
+
+
+<p> Song 42 (SDR: 7.1 dB) </p>
+
+<li>
+
+
+
+<button class="soundboard-play" data-inline="true">Mixture</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Vocal</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Accompaniment</button>
+
+
+
+</li>
+
+
+
+<p> Song 15 (SDR: 6.3 dB) </p>
+
+<li>
+
+
+
+<button class="soundboard-play" data-inline="true">Mixture</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Vocal</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Accompaniment</button>
+
+
+
+</li>
+
+
+
+<p> Song 20 (SDR: 3.1 dB) </p>
+
+<li>
+
+
+
+<button class="soundboard-play" data-inline="true">Mixture</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Vocal</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Accompaniment</button>
+
+
+
+</li>
+
+
+
+<p> Song 1 (SDR: 0.6 dB) </p>
+
+<li>
+
+
+
+<button class="soundboard-play" data-inline="true">Mixture</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Vocal</button>
+
+
+
+<button class="soundboard-play" data-inline="true">Estimated Accompaniment</button>
+
+
+
+</li>
+
+
+
+<button class="soundboard-stop" data-inline="true">Stop Audio</button>
+
+</ul>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        var config = JSON.parse('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Song 42 (SDR: 7.1 dB)","sounds":[{"button_label":"Mixture","url":"audio/Grais_2018/song_42_mix.flac"},{"button_label":"Estimated Vocal","url":"audio/Grais_2018/song_42_vox.flac"},{"button_label":"Estimated Accompaniment","url":"audio/Grais_2018/song_42_accomp.flac"}]},{"name":"Song 15 (SDR: 6.3 dB)","sounds":[{"button_label":"Mixture","url":"audio/Grais_2018/song_15_mix.flac"},{"button_label":"Estimated Vocal","url":"audio/Grais_2018/song_15_vox.flac"},{"button_label":"Estimated Accompaniment","url":"audio/Grais_2018/song_15_accomp.flac"}]},{"name":"Song 20 (SDR: 3.1 dB)","sounds":[{"button_label":"Mixture","url":"audio/Grais_2018/song_20_mix.flac"},{"button_label":"Estimated Vocal","url":"audio/Grais_2018/song_20_vox.flac"},{"button_label":"Estimated Accompaniment","url":"audio/Grais_2018/song_20_accomp.flac"}]},{"name":"Song 1 (SDR: 0.6 dB)","sounds":[{"button_label":"Mixture","url":"audio/Grais_2018/song_1_mix.flac"},{"button_label":"Estimated Vocal","url":"audio/Grais_2018/song_1_vox.flac"},{"button_label":"Estimated Accompaniment","url":"audio/Grais_2018/song_1_accomp.flac"}]}]}')
+
+        config.siteURL = 'https://cvssp.github.io/maruss-website'
+
+        var soundboard = new Soundboard(config)
+    })
+
+</script>
+</p>
+
         
 
         
