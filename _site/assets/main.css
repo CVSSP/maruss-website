@@ -454,6 +454,91 @@ pre {
   .highlight .il {
     color: #099; }
 
+/* Colour-blind friendly */
+/* user friendly config */
+/* CSS */
+h1 {
+  color: #0072b2; }
+
+h2 {
+  color: #cc79a7; }
+
+.site-nav .page-link {
+  color: #56b4e9 !important; }
+
+a {
+  color: #56b4e9 !important; }
+
+a.pdf-link {
+  color: #cc79a7 !important; }
+
+body {
+  font-family: 'Roboto';
+  color: #343e4f;
+  background-color: white; }
+
+h1, h2, h3, h4 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal; }
+
+pre, code {
+  font-family: 'Ubuntu Mono';
+  background-color: #d4f7ed; }
+
+.highlighter-rouge .highlight {
+  background: #d4f7ed; }
+
+ol li {
+  padding: 10px 0px !important; }
+
+ol {
+  list-style-type: disc;
+  color: #d4f7ed; }
+
+li > span {
+  color: #343e4f; }
+
+ul > li > p {
+  color: #343e4f; }
+
+ul > li {
+  color: #d4f7ed; }
+
+a.site-title {
+  color: #cc79a7 !important; }
+
+header.site-header {
+  background-color: #efefef;
+  border-top: 0;
+  padding-top: 0px; }
+
+footer.site-footer {
+  min-height: 100px;
+  background-color: white;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+main.page-content {
+  padding-top: 20px;
+  padding-bottom: 0;
+  min-height: calc(100% - 200px); }
+
+html, body {
+  height: 100%; }
+
+* {
+  margin: 0; }
+
+button {
+  min-height: 50px;
+  min-width: 100px;
+  background-color: #efefef;
+  color: #343e4f;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px; }
+
 .soundboard-container {
   text-align: center;
   margin: 0px auto;
@@ -465,6 +550,28 @@ pre {
 .soundboard-container > p {
   margin: 5px; }
 
+.spinner {
+  border: 16px solid #efefef;
+  border-radius: 50%;
+  border-top: 16px solid #cc79a7;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto; }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 /* Colour-blind friendly */
 /* user friendly config */
 /* CSS */
