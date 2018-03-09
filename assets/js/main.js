@@ -143,11 +143,13 @@ AudioLoader.prototype.checkBuffers = function (callBack) {
   }
 
   if (this.allOk) {
+    $('.spinner').hide()
     if (typeof callBack === 'function') { callBack() }
   }
 }
 
 AudioLoader.prototype.load = function (callBack) {
+  $('.spinner').show()
 
   this.allOk = false
   for (var i = 0; i < this.urlList.length; ++i) { this.loadBuffer(this.urlList[i], i, callBack) }
