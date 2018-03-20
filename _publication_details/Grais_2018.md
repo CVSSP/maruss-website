@@ -1,13 +1,20 @@
 ---
 ---
 
-## Audio Examples
+## Evaluation Results
 
-The performance of this system was assessed using the [BSS
-Eval toolkit](http://bass-db.gforge.inria.fr/bss_eval/). We extracted the
-singing-voice (vocals) from 46 different rock and pop songs which were used
-for the evaluation stage of the music separation challenge of [SiSEC
-2016](http://sisec17.audiolabs-erlangen.de/#/about).
+We extracted the singing-voice (vocals) from 46 different rock and pop songs
+which were used for the evaluation stage of the music separation challenge of
+[SiSEC 2016](http://sisec17.audiolabs-erlangen.de/#/about). The performance of
+this system was assessed using the [BSS Eval
+toolkit](http://bass-db.gforge.inria.fr/bss_eval/). For comparison, we applied BSS Eval to the
+audio files submitted by participants of the SiSEC 2016 challenge (note that these values
+differ from those found on the [results
+page](http://sisec17.audiolabs-erlangen.de/#/results/1/4/2) of the SiSEC MUS
+site, as we did not use the framewise method). You can download the
+vocal separation performance measures as a [csv file]({{ site.url }}{{ site.baseurl }}/resources/Grais_2018_vocal_results.csv), where our proposed method is named "MRCAE".
+
+## Audio Examples
 
 The following examples are provided to show some of the best and worst of the
 estimated vocals and estimated accompaniment from the SiSEC 2016 dataset. The
