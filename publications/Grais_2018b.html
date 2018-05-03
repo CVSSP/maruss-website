@@ -114,17 +114,15 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods</h1>
+    <h1 class="post-title">Combining Fully Convolutional and Recurrent Neural Networks for Single Channel Audio Source Separation</h1>
   </header>
 
   <div class="post-content">
     <ul>
 
-<li><p>DOI: <a href="http://dx.doi.org/10.1109/EUSIPCO.2016.7760551">10.1109/EUSIPCO.2016.7760551</a></p></li>
 
 
-
-<li><p>Open access: <a href="http://epubs.surrey.ac.uk/811172/">http://epubs.surrey.ac.uk/811172/</a></p></li>
+<li><p>Open access: <a href="http://epubs.surrey.ac.uk/846033/">http://epubs.surrey.ac.uk/846033/</a></p></li>
 
 
 
@@ -132,18 +130,17 @@
 
 
 <h2> Abstract </h2>
-Audio source separation models are typically evaluated using
-        objective separation quality measures, but rigorous statistical methods
-            have yet to be applied to the problem of model comparison. As a
-            result, it can be difficult to establish whether or not reliable
-            progress is being made during the development of new models. In this
-            paper, we provide a hypothesis-driven statistical analysis of the
-            results of the recent source separation SiSEC challenge involving
-            twelve competing models tested on separation of voice and
-            accompaniment from fifty pieces of “professionally produced”
-            contemporary music. Using nonparametric statistics, we establish
-            reliable evidence for meaningful conclusions about the performance
-            of the various models.
+
+        Combining different models is a common strategy to build a good audio
+        source separation system. In this work, we combine two powerful deep
+        neural networks for audio single channel source separation (SCSS).
+        Namely, we combine fully convolutional neural networks (FCNs) and
+        recurrent neural networks, specifically, bidirectional long
+        short-term memory recurrent neural networks (BLSTMs). FCNs are good
+        at extracting useful features from the audio data and BLSTMs are
+        good at modeling the temporal structure of the audio signals. Our
+        experimental results show that combining FCNs and BLSTMs achieves
+        better separation performance than using each model individually.
     
 
 
@@ -151,14 +148,14 @@ Audio source separation models are typically evaluated using
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
-@inproceedings{DBLP:conf/eusipco/Simpson_2016,
-  author = {Simpson, A. J. R. and Roma, G. and Grais, Emad M. and Mason, R. D. and Hummersone, C. and Liutkus, A. and Plumbley, M. D.},
-  title = {Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods},
-  booktitle = {24th European Signal Processing Conference, {EUSIPCO} 2016, Budapest, Hungary, August 29 - September 2, 2016},
-  pages = {1763--1767},
-  year = {2016},
-  openaccess = {http://epubs.surrey.ac.uk/811172/},
-  doi = {10.1109/EUSIPCO.2016.7760551},
+@conference{Grais_2018b,
+  title = {Combining Fully Convolutional and Recurrent Neural Networks for Single Channel Audio Source Separation},
+  author = {Grais, E. M. and Plumbley, M. D.},
+  booktitle = {Audio Engineering Society Convention 144},
+  month = may,
+  year = {2018},
+  address = {Milan, Italy},
+  openaccess = {http://epubs.surrey.ac.uk/846033/},
   keywords = {"maruss"}
 }
 
@@ -173,6 +170,11 @@ Audio source separation models are typically evaluated using
         
 
         
+
+        
+            <h2 id="supplementary-material">Supplementary Material</h2>
+
+<p><a href="https://cvssp.github.io/maruss-website/resources/Grais_2018b_poster.pdf">Download the poster</a> presented by Emad M. Grais at the 144th AES Convention.</p>
 
         
 
