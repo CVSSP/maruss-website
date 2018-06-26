@@ -11,7 +11,7 @@ quality audio repurposing, based on high quality musical audio source separation
 {% assign posts = site.posts | sort:"date"  %}
 
 {% if posts.size > 0 %}
-# Latests posts
+# Latest posts
 
 <ul class="post-list">
 
