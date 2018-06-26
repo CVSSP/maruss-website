@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AES 2018 Milan Convention 
-categories: audio
+category: posts
 ---
 
 MARuSS project organised a workshop session at the AES Milan Convention in May 2018: 
