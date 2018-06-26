@@ -8,9 +8,9 @@ MARuSS project organised a workshop session at the AES Milan Convention in May 2
 
 [**Audio Repurposing Using Source Separation**](http://www.aes.org/events/144/workshops/?ID=5917)
 
-Check for more details [here](https://wordpress.com/post/philipcolemanaudio.wordpress.com/39).
+Check for more details in Phil Coleman's blog post [here](https://philipcolemanaudio.wordpress.com/2018/06/19/aes-milan-workshop-on-audio-repurposing-using-source-separation/).
 
-You can see the presentations by the panelists below:
+You can download the presentations by the panelists below:
 
 [Sound Source Separation: An Introduction]({{ site.url }}{{ site.baseurl }}/resources/Cano_2018_AES_workshop.pdf), E. Cano
 
