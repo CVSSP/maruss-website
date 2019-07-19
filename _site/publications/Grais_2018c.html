@@ -122,17 +122,15 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods</h1>
+    <h1 class="post-title">Multi-Resolution Fully Convolutional Neural Networks for Monaural Audio Source Separation</h1>
   </header>
 
   <div class="post-content">
     <ul>
 
-<li><p>DOI: <a href="http://dx.doi.org/10.1109/EUSIPCO.2016.7760551">10.1109/EUSIPCO.2016.7760551</a></p></li>
 
 
-
-<li><p>Open access: <a href="http://epubs.surrey.ac.uk/811172/">http://epubs.surrey.ac.uk/811172/</a></p></li>
+<li><p>Open access: <a href="http://epubs.surrey.ac.uk/846316/">http://epubs.surrey.ac.uk/846316/</a></p></li>
 
 
 
@@ -140,33 +138,24 @@
 
 
 <h2> Abstract </h2>
-Audio source separation models are typically evaluated using
-        objective separation quality measures, but rigorous statistical methods
-            have yet to be applied to the problem of model comparison. As a
-            result, it can be difficult to establish whether or not reliable
-            progress is being made during the development of new models. In this
-            paper, we provide a hypothesis-driven statistical analysis of the
-            results of the recent source separation SiSEC challenge involving
-            twelve competing models tested on separation of voice and
-            accompaniment from fifty pieces of “professionally produced”
-            contemporary music. Using nonparametric statistics, we establish
-            reliable evidence for meaningful conclusions about the performance
-            of the various models.
-    
+In deep neural networks with convolutional layers, all the neurons in each layer typically have the same size receptive fields (RFs) with the same resolution. Convolutional layers with neurons that have large RF capture global information from the input features, while layers with neurons that have small RF size capture local details with high resolution from the input features. In this work, we introduce novel deep multi-resolution fully convolutional neural networks (MR-FCN), where each layer has a range of neurons with different RF sizes to extract multi-resolution features that capture the global and local information from its input features. The proposed MR-FCN is applied to separate the singing voice from mixtures of music sources. Experimental results show that using MR-FCN improves the performance compared to feedforward deep neural networks (DNNs) and single resolution deep fully convolutional neural networks (FCNs) on the audio source separation problem.
 
 
 
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
-@inproceedings{DBLP:conf/eusipco/Simpson_2016,
-  author = {Simpson, A. J. R. and Roma, G. and Grais, Emad M. and Mason, R. D. and Hummersone, C. and Liutkus, A. and Plumbley, M. D.},
-  title = {Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods},
-  booktitle = {24th European Signal Processing Conference, {EUSIPCO} 2016, Budapest, Hungary, August 29 - September 2, 2016},
-  pages = {1763--1767},
-  year = {2016},
-  openaccess = {http://epubs.surrey.ac.uk/811172/},
-  doi = {10.1109/EUSIPCO.2016.7760551},
+@inbook{Grais_2018c,
+  author = {Grais, E. M. and Wierstorf, H. and Ward, D. Plumbley, M. D.},
+  editor = {Deville, Y. and Gannot, S. and Mason, R. D. and Plumbley, M. D. and Ward, D.},
+  title = {Multi-Resolution Fully Convolutional Neural Networks for Monaural Audio Source Separation},
+  booktitle = {Latent Variable Analysis and Signal Separation: 13th International Conference, LVA/ICA 2018, Guidford, UK, July 2-6, 2018, Proceedings},
+  year = {2018},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {340--350},
+  isbn = {978-3-319-93764-9},
+  openaccess = {http://epubs.surrey.ac.uk/846316/},
   keywords = {"maruss"}
 }
 
