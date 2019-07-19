@@ -122,17 +122,15 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods</h1>
+    <h1 class="post-title">Referenceless Performance Evaluation of Audio Source Separation using Deep Neural Networks</h1>
   </header>
 
   <div class="post-content">
     <ul>
 
-<li><p>DOI: <a href="http://dx.doi.org/10.1109/EUSIPCO.2016.7760551">10.1109/EUSIPCO.2016.7760551</a></p></li>
 
 
-
-<li><p>Open access: <a href="http://epubs.surrey.ac.uk/811172/">http://epubs.surrey.ac.uk/811172/</a></p></li>
+<li><p>Open access: <a href="http://epubs.surrey.ac.uk/852063/">http://epubs.surrey.ac.uk/852063/</a></p></li>
 
 
 
@@ -140,34 +138,25 @@
 
 
 <h2> Abstract </h2>
-Audio source separation models are typically evaluated using
-        objective separation quality measures, but rigorous statistical methods
-            have yet to be applied to the problem of model comparison. As a
-            result, it can be difficult to establish whether or not reliable
-            progress is being made during the development of new models. In this
-            paper, we provide a hypothesis-driven statistical analysis of the
-            results of the recent source separation SiSEC challenge involving
-            twelve competing models tested on separation of voice and
-            accompaniment from fifty pieces of “professionally produced”
-            contemporary music. Using nonparametric statistics, we establish
-            reliable evidence for meaningful conclusions about the performance
-            of the various models.
-    
+Current performance evaluation for audio source separation depends on comparing the processed or separated signals with reference signals. Therefore, common performance evaluation toolkits are not applicable to real-world situations where the ground truth audio is unavailable. In this paper, we propose a performance evaluation technique that does not require reference signals in order to assess separation quality. The proposed technique uses a deep neural network (DNN) to map the processed audio into its quality score. Our experiment results show that the DNN is capable of predicting the sources-to-artifacts ratio from the blind source separation evaluation toolkit
+[1] for singing-voice separation without the need for reference signals.
 
 
 
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
-@inproceedings{DBLP:conf/eusipco/Simpson_2016,
-  author = {Simpson, A. J. R. and Roma, G. and Grais, Emad M. and Mason, R. D. and Hummersone, C. and Liutkus, A. and Plumbley, M. D.},
-  title = {Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods},
-  booktitle = {24th European Signal Processing Conference, {EUSIPCO} 2016, Budapest, Hungary, August 29 - September 2, 2016},
-  pages = {1763--1767},
-  year = {2016},
-  openaccess = {http://epubs.surrey.ac.uk/811172/},
-  doi = {10.1109/EUSIPCO.2016.7760551},
-  keywords = {"maruss"}
+@inproceedings{Grais_2019,
+  booktitle = {27th European Signal Processing Conference (EUSIPCO)},
+  address = { A Coruña, Spain},
+  month = jun,
+  title = {Referenceless Performance Evaluation of Audio Source Separation using Deep Neural Networks},
+  author = {Grais, E. M. and Wierstorf, H. and Ward, D. and Mason, R. D. and Plumbley, M. D.},
+  publisher = {IEEE},
+  year = {2019},
+  journal = {Proceedings 2019 27th European Signal Processing Conference (EUSIPCO)},
+  keywords = {Performance evaluation; Deep learning; Audio source separation; BSS-Eval sources-to-artifacts ratio},
+  openaccess = {http://epubs.surrey.ac.uk/852063/}
 }
 
 </code>

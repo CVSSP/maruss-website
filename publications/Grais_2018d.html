@@ -122,36 +122,38 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods</h1>
+    <h1 class="post-title">Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders</h1>
   </header>
 
   <div class="post-content">
     <ul>
 
-<li><p>DOI: <a href="http://dx.doi.org/10.1109/EUSIPCO.2016.7760551">10.1109/EUSIPCO.2016.7760551</a></p></li>
+<li><p>DOI: <a href="http://dx.doi.org/10.23919/EUSIPCO.2018.8553571">10.23919/EUSIPCO.2018.8553571</a></p></li>
 
 
 
-<li><p>Open access: <a href="http://epubs.surrey.ac.uk/811172/">http://epubs.surrey.ac.uk/811172/</a></p></li>
+<li><p>Open access: <a href="http://epubs.surrey.ac.uk/848607/">http://epubs.surrey.ac.uk/848607/</a></p></li>
 
 
+
+<li><p>Link: <a href="https://ieeexplore.ieee.org/document/8553571">https://ieeexplore.ieee.org/document/8553571</a></p></li>
 
 </ul>
 
 
 <h2> Abstract </h2>
-Audio source separation models are typically evaluated using
-        objective separation quality measures, but rigorous statistical methods
-            have yet to be applied to the problem of model comparison. As a
-            result, it can be difficult to establish whether or not reliable
-            progress is being made during the development of new models. In this
-            paper, we provide a hypothesis-driven statistical analysis of the
-            results of the recent source separation SiSEC challenge involving
-            twelve competing models tested on separation of voice and
-            accompaniment from fifty pieces of “professionally produced”
-            contemporary music. Using nonparametric statistics, we establish
-            reliable evidence for meaningful conclusions about the performance
-            of the various models.
+
+        Supervised multi-channel audio source separation requires extracting
+        useful spectral, temporal, and spatial features from the mixed
+        signals. the success of many existing systems is therefore largely
+        dependent on the choice of features used for training. In this
+        work, we introduce a novel multi-channel, multiresolution
+        convolutional auto-encoder neural network that works on raw
+        time-domain signals to determine appropriate multiresolution
+        features for separating the singing-voice from stereo music. Our
+        experimental results show that the proposed method can achieve
+        multi-channel audio source separation without the need for
+        hand-crafted features or any pre- or post-processing.
     
 
 
@@ -159,15 +161,19 @@ Audio source separation models are typically evaluated using
 <h2> Bibtex </h2>
 <pre>
 <code class='language-bibtex'>
-@inproceedings{DBLP:conf/eusipco/Simpson_2016,
-  author = {Simpson, A. J. R. and Roma, G. and Grais, Emad M. and Mason, R. D. and Hummersone, C. and Liutkus, A. and Plumbley, M. D.},
-  title = {Evaluation of Audio Source Separation Models using Hypothesis-Driven Non-Parametric Statistical Methods},
-  booktitle = {24th European Signal Processing Conference, {EUSIPCO} 2016, Budapest, Hungary, August 29 - September 2, 2016},
-  pages = {1763--1767},
-  year = {2016},
-  openaccess = {http://epubs.surrey.ac.uk/811172/},
-  doi = {10.1109/EUSIPCO.2016.7760551},
-  keywords = {"maruss"}
+@inproceedings{Grais_2018d,
+  author = {{Grais}, E. M. and {Ward}, D. and {Plumbley}, M. D.},
+  booktitle = {2018 26th European Signal Processing Conference (EUSIPCO)},
+  title = {Raw Multi-Channel Audio Source Separation using Multi-Resolution Convolutional Auto-Encoders},
+  year = {2018},
+  pages = {1577-1581},
+  keywords = {"maruss"},
+  doi = {10.23919/EUSIPCO.2018.8553571},
+  issn = {2076-1465},
+  month = sep,
+  address = {Rome, Italy},
+  url = {https://ieeexplore.ieee.org/document/8553571},
+  openaccess = {http://epubs.surrey.ac.uk/848607/}
 }
 
 </code>
